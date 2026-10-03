@@ -1,0 +1,5441 @@
+--[[
+
+Hi, if you see this then you have the source code for the gui so don't leak it.
+
+]]
+
+
+-- Instances
+
+local screengui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local Page1Button = Instance.new("TextButton")
+local Page2Button = Instance.new("TextButton")
+local Page3Button = Instance.new("TextButton")
+local Page4Button = Instance.new("TextButton")
+local Page1 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local ImageLabel_6 = Instance.new("ImageLabel")
+local ImageLabel_7 = Instance.new("ImageLabel")
+local ImageLabel_8 = Instance.new("ImageLabel")
+local ImageLabel_9 = Instance.new("ImageLabel")
+local ImageLabel_10 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextButton_11 = Instance.new("TextButton")
+local TextButton_12 = Instance.new("TextButton")
+local TextButton_13 = Instance.new("TextButton")
+local TextButton_14 = Instance.new("TextButton")
+local TextButton_15 = Instance.new("TextButton")
+local ImageLabel_11 = Instance.new("ImageLabel")
+local TextButton_16 = Instance.new("TextButton")
+local ImageLabel_12 = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local skybutton = Instance.new("TextButton")
+local skyid = Instance.new("TextBox")
+local decalinsert = Instance.new("TextButton")
+local Page2 = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextButton_17 = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextButton_18 = Instance.new("TextButton")
+local TextButton_19 = Instance.new("TextButton")
+local TextButton_20 = Instance.new("TextButton")
+local TextButton_21 = Instance.new("TextButton")
+local TextButton_22 = Instance.new("TextButton")
+local TextButton_23 = Instance.new("TextButton")
+local TextButton_24 = Instance.new("TextButton")
+local TextButton_25 = Instance.new("TextButton")
+local TextButton_26 = Instance.new("TextButton")
+local TextButton_27 = Instance.new("TextButton")
+local TextButton_28 = Instance.new("TextButton")
+local TextButton_29 = Instance.new("TextButton")
+local TextButton_30 = Instance.new("TextButton")
+local TextButton_31 = Instance.new("TextButton")
+local TextButton_32 = Instance.new("TextButton")
+local TextButton_33 = Instance.new("TextButton")
+local TextButton_34 = Instance.new("TextButton")
+local TextButton_35 = Instance.new("TextButton")
+local TextButton_36 = Instance.new("TextButton")
+local TextButton_37 = Instance.new("TextButton")
+local TextButton_38 = Instance.new("TextButton")
+local TextButton_39 = Instance.new("TextButton")
+local TextButton_40 = Instance.new("TextButton")
+local TextButton_41 = Instance.new("TextButton")
+local TextButton_42 = Instance.new("TextButton")
+local TextButton_43 = Instance.new("TextButton")
+local TextButton_44 = Instance.new("TextButton")
+local TextButton_45 = Instance.new("TextButton")
+local TextButton_46 = Instance.new("TextButton")
+local TextButton_47 = Instance.new("TextButton")
+local TextButton_48 = Instance.new("TextButton")
+local TextButton_49 = Instance.new("TextButton")
+local TextButton_50 = Instance.new("TextButton")
+local TextButton_51 = Instance.new("TextButton")
+local TextButton_52 = Instance.new("TextButton")
+local TextButton_53 = Instance.new("TextButton")
+local TextButton_54 = Instance.new("TextButton")
+local TextButton_55 = Instance.new("TextButton")
+local TextButton_56 = Instance.new("TextButton")
+local TextButton_57 = Instance.new("TextButton")
+local TextButton_58 = Instance.new("TextButton")
+local TextButton_59 = Instance.new("TextButton")
+local TextButton_60 = Instance.new("TextButton")
+local TextButton_61 = Instance.new("TextButton")
+local TextButton_62 = Instance.new("TextButton")
+local TextButton_63 = Instance.new("TextButton")
+local TextButton_64 = Instance.new("TextButton")
+local TextButton_65 = Instance.new("TextButton")
+local Page3 = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local randomobby = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local horror = Instance.new("TextButton")
+local brookhaven = Instance.new("TextButton")
+local randomcity = Instance.new("TextButton")
+local ragdollengine = Instance.new("TextButton")
+local scp087 = Instance.new("TextButton")
+local mw2rust = Instance.new("TextButton")
+local TextButton_66 = Instance.new("TextButton")
+local TextButton_67 = Instance.new("TextButton")
+local TextButton_68 = Instance.new("TextButton")
+local TrafficConeHaxRealm = Instance.new("TextButton")
+local oldobby = Instance.new("TextButton")
+local slap = Instance.new("TextButton")
+local nuketown = Instance.new("TextButton")
+local mc = Instance.new("TextButton")
+local TextButton_69 = Instance.new("TextButton")
+local TextButton_70 = Instance.new("TextButton")
+local Page4 = Instance.new("Frame")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local ImageLabel_13 = Instance.new("ImageLabel")
+
+-- Properties
+
+screengui.Name = "screengui"
+screengui.Parent = game.CoreGui
+screengui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+screengui.DisplayOrder = 999999999
+screengui.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = screengui
+MainFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.377259135, 0, 0.157629251, 0)
+MainFrame.Size = UDim2.new(0, 668, 0, 506)
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel.Size = UDim2.new(0, 668, 0, 50)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "TrafficConeHax f3x gui v6"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 40
+
+Frame.Parent = MainFrame
+Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.BorderColor3 = Color3.new(1, 0, 0)
+Frame.Position = UDim2.new(0.866766453, 0, 0.0988142267, 0)
+Frame.Size = UDim2.new(0, 89, 0, 456)
+
+Page1Button.Name = "Page1Button"
+Page1Button.Parent = Frame
+Page1Button.BackgroundColor3 = Color3.new(0, 0, 0)
+Page1Button.BorderColor3 = Color3.new(1, 0, 0)
+Page1Button.Size = UDim2.new(0, 89, 0, 50)
+Page1Button.Font = Enum.Font.SourceSans
+Page1Button.Text = "page 1 (f3x)"
+Page1Button.TextColor3 = Color3.new(1, 1, 1)
+Page1Button.TextSize = 25
+Page1Button.TextWrapped = true
+
+Page2Button.Name = "Page2Button"
+Page2Button.Parent = Frame
+Page2Button.BackgroundColor3 = Color3.new(0, 0, 0)
+Page2Button.BorderColor3 = Color3.new(1, 0, 0)
+Page2Button.Position = UDim2.new(0, 0, 0.114035085, 0)
+Page2Button.Size = UDim2.new(0, 89, 0, 50)
+Page2Button.Font = Enum.Font.SourceSans
+Page2Button.Text = "page 2 (hd admin and music)"
+Page2Button.TextColor3 = Color3.new(1, 1, 1)
+Page2Button.TextSize = 15
+Page2Button.TextWrapped = true
+
+Page3Button.Name = "Page3Button"
+Page3Button.Parent = Frame
+Page3Button.BackgroundColor3 = Color3.new(0, 0, 0)
+Page3Button.BorderColor3 = Color3.new(1, 0, 0)
+Page3Button.Position = UDim2.new(0, 0, 0.223684207, 0)
+Page3Button.Size = UDim2.new(0, 89, 0, 50)
+Page3Button.Font = Enum.Font.SourceSans
+Page3Button.Text = "page 3 (maps and shit)"
+Page3Button.TextColor3 = Color3.new(1, 1, 1)
+Page3Button.TextSize = 17
+Page3Button.TextWrapped = true
+
+Page4Button.Name = "Page4Button"
+Page4Button.Parent = Frame
+Page4Button.BackgroundColor3 = Color3.new(0, 0, 0)
+Page4Button.BorderColor3 = Color3.new(1, 0, 0)
+Page4Button.Position = UDim2.new(0, 0, 0.333333343, 0)
+Page4Button.Size = UDim2.new(0, 89, 0, 50)
+Page4Button.Font = Enum.Font.SourceSans
+Page4Button.Text = "page 4 (credits)"
+Page4Button.TextColor3 = Color3.new(1, 1, 1)
+Page4Button.TextSize = 25
+Page4Button.TextWrapped = true
+
+Page1.Name = "Page1"
+Page1.Parent = MainFrame
+Page1.BackgroundColor3 = Color3.new(0, 0, 0)
+Page1.BorderColor3 = Color3.new(1, 0, 0)
+Page1.Position = UDim2.new(0, 0, 0.0988142267, 0)
+Page1.Size = UDim2.new(0, 579, 0, 456)
+
+TextLabel_2.Parent = Page1
+TextLabel_2.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "f3x page"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 22
+TextLabel_2.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextWrapped = true
+
+TextButton.Parent = Page1
+TextButton.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton.BorderColor3 = Color3.new(1, 0, 0)
+TextButton.Position = UDim2.new(0, 0, 0.239035085, 0)
+TextButton.Size = UDim2.new(0, 87, 0, 35)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "1"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextSize = 30
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = Page1
+TextButton_2.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_2.Position = UDim2.new(0.150259063, 0, 0.517543852, 0)
+TextButton_2.Size = UDim2.new(0, 87, 0, 35)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "2"
+TextButton_2.TextColor3 = Color3.new(1, 1, 1)
+TextButton_2.TextSize = 30
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = Page1
+TextButton_3.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_3.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_3.Position = UDim2.new(0.300518125, 0, 0.239035085, 0)
+TextButton_3.Size = UDim2.new(0, 87, 0, 35)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "3"
+TextButton_3.TextColor3 = Color3.new(1, 1, 1)
+TextButton_3.TextSize = 30
+TextButton_3.TextWrapped = true
+
+TextButton_4.Parent = Page1
+TextButton_4.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_4.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_4.Position = UDim2.new(0.450777203, 0, 0.239035085, 0)
+TextButton_4.Size = UDim2.new(0, 87, 0, 35)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "4"
+TextButton_4.TextColor3 = Color3.new(1, 1, 1)
+TextButton_4.TextSize = 30
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = Page1
+TextButton_5.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_5.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_5.Position = UDim2.new(0.601036251, 0, 0.239035085, 0)
+TextButton_5.Size = UDim2.new(0, 87, 0, 35)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "5"
+TextButton_5.TextColor3 = Color3.new(1, 1, 1)
+TextButton_5.TextSize = 30
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = Page1
+TextButton_6.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_6.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_6.Position = UDim2.new(0.601036251, 0, 0.517543852, 0)
+TextButton_6.Size = UDim2.new(0, 87, 0, 35)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "5"
+TextButton_6.TextColor3 = Color3.new(1, 1, 1)
+TextButton_6.TextSize = 30
+TextButton_6.TextWrapped = true
+
+TextButton_7.Parent = Page1
+TextButton_7.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_7.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_7.Position = UDim2.new(0, 0, 0.517543852, 0)
+TextButton_7.Size = UDim2.new(0, 87, 0, 35)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "1"
+TextButton_7.TextColor3 = Color3.new(1, 1, 1)
+TextButton_7.TextSize = 30
+TextButton_7.TextWrapped = true
+
+TextButton_8.Parent = Page1
+TextButton_8.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_8.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_8.Position = UDim2.new(0.150259063, 0, 0.239035085, 0)
+TextButton_8.Size = UDim2.new(0, 87, 0, 35)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "2"
+TextButton_8.TextColor3 = Color3.new(1, 1, 1)
+TextButton_8.TextSize = 30
+TextButton_8.TextWrapped = true
+
+TextButton_9.Parent = Page1
+TextButton_9.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_9.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_9.Position = UDim2.new(0.300518125, 0, 0.517543852, 0)
+TextButton_9.Size = UDim2.new(0, 87, 0, 35)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "3"
+TextButton_9.TextColor3 = Color3.new(1, 1, 1)
+TextButton_9.TextSize = 30
+TextButton_9.TextWrapped = true
+
+TextButton_10.Parent = Page1
+TextButton_10.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_10.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_10.Position = UDim2.new(0.450777203, 0, 0.517543852, 0)
+TextButton_10.Size = UDim2.new(0, 87, 0, 35)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "4"
+TextButton_10.TextColor3 = Color3.new(1, 1, 1)
+TextButton_10.TextSize = 30
+TextButton_10.TextWrapped = true
+
+TextLabel_3.Parent = Page1
+TextLabel_3.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_3.Position = UDim2.new(0, 0, 0.142543852, 0)
+TextLabel_3.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "--- Skyboxes ---"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 22
+TextLabel_3.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextWrapped = true
+
+ImageLabel.Parent = Page1
+ImageLabel.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, 0.315789461, 0)
+ImageLabel.Size = UDim2.new(0, 87, 0, 47)
+ImageLabel.Image = "rbxassetid://112792392213725"
+
+ImageLabel_2.Parent = Page1
+ImageLabel_2.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.150259063, 0, 0.315789461, 0)
+ImageLabel_2.Size = UDim2.new(0, 87, 0, 47)
+ImageLabel_2.Image = "rbxassetid://137833619500777"
+
+ImageLabel_3.Parent = Page1
+ImageLabel_3.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.300518125, 0, 0.315789461, 0)
+ImageLabel_3.Size = UDim2.new(0, 87, 0, 47)
+ImageLabel_3.Image = "rbxassetid://137215184006494"
+
+ImageLabel_4.Parent = Page1
+ImageLabel_4.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.450777203, 0, 0.315789461, 0)
+ImageLabel_4.Size = UDim2.new(0, 87, 0, 47)
+ImageLabel_4.Image = "rbxassetid://84442191134852"
+
+ImageLabel_5.Parent = Page1
+ImageLabel_5.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.601036251, 0, 0.315789461, 0)
+ImageLabel_5.Size = UDim2.new(0, 87, 0, 47)
+ImageLabel_5.Image = "rbxassetid://104529805889965"
+
+TextLabel_4.Parent = Page1
+TextLabel_4.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_4.Position = UDim2.new(0, 0, 0.418859661, 0)
+TextLabel_4.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "--- Decal spams ---"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextSize = 22
+TextLabel_4.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextWrapped = true
+
+ImageLabel_6.Parent = Page1
+ImageLabel_6.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_6.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_6.BorderSizePixel = 0
+ImageLabel_6.Position = UDim2.new(0, 0, 0.594298244, 0)
+ImageLabel_6.Size = UDim2.new(0, 87, 0, 43)
+ImageLabel_6.Image = "rbxassetid://112792392213725"
+
+ImageLabel_7.Parent = Page1
+ImageLabel_7.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_7.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_7.BorderSizePixel = 0
+ImageLabel_7.Position = UDim2.new(0.150259063, 0, 0.594298244, 0)
+ImageLabel_7.Size = UDim2.new(0, 87, 0, 43)
+ImageLabel_7.Image = "rbxassetid://137833619500777"
+
+ImageLabel_8.Parent = Page1
+ImageLabel_8.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_8.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_8.BorderSizePixel = 0
+ImageLabel_8.Position = UDim2.new(0.300518125, 0, 0.594298244, 0)
+ImageLabel_8.Size = UDim2.new(0, 87, 0, 43)
+ImageLabel_8.Image = "rbxassetid://137215184006494"
+
+ImageLabel_9.Parent = Page1
+ImageLabel_9.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_9.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_9.BorderSizePixel = 0
+ImageLabel_9.Position = UDim2.new(0.450777203, 0, 0.594298244, 0)
+ImageLabel_9.Size = UDim2.new(0, 87, 0, 43)
+ImageLabel_9.Image = "rbxassetid://84442191134852"
+
+ImageLabel_10.Parent = Page1
+ImageLabel_10.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_10.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_10.BorderSizePixel = 0
+ImageLabel_10.Position = UDim2.new(0.601036251, 0, 0.594298244, 0)
+ImageLabel_10.Size = UDim2.new(0, 87, 0, 43)
+ImageLabel_10.Image = "rbxassetid://104529805889965"
+
+TextLabel_5.Parent = Page1
+TextLabel_5.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_5.Position = UDim2.new(0, 0, 0.688596487, 0)
+TextLabel_5.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "--- misc ---"
+TextLabel_5.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_5.TextSize = 22
+TextLabel_5.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_5.TextWrapped = true
+
+TextButton_11.Parent = Page1
+TextButton_11.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_11.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_11.Position = UDim2.new(0, 0, 0.769736826, 0)
+TextButton_11.Size = UDim2.new(0, 87, 0, 35)
+TextButton_11.Font = Enum.Font.SourceSans
+TextButton_11.Text = "remove skybox"
+TextButton_11.TextColor3 = Color3.new(1, 1, 1)
+TextButton_11.TextSize = 16
+TextButton_11.TextWrapped = true
+
+TextButton_12.Parent = Page1
+TextButton_12.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_12.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_12.Position = UDim2.new(0.150259063, 0, 0.769736826, 0)
+TextButton_12.Size = UDim2.new(0, 87, 0, 35)
+TextButton_12.Font = Enum.Font.SourceSans
+TextButton_12.Text = "remove decals"
+TextButton_12.TextColor3 = Color3.new(1, 1, 1)
+TextButton_12.TextSize = 16
+TextButton_12.TextWrapped = true
+
+TextButton_13.Parent = Page1
+TextButton_13.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_13.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_13.Position = UDim2.new(0.300518125, 0, 0.769736826, 0)
+TextButton_13.Size = UDim2.new(0, 87, 0, 35)
+TextButton_13.Font = Enum.Font.SourceSans
+TextButton_13.Text = "unancor parts"
+TextButton_13.TextColor3 = Color3.new(1, 1, 1)
+TextButton_13.TextSize = 16
+TextButton_13.TextWrapped = true
+
+TextButton_14.Parent = Page1
+TextButton_14.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_14.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_14.Position = UDim2.new(0.450777203, 0, 0.769736826, 0)
+TextButton_14.Size = UDim2.new(0, 87, 0, 35)
+TextButton_14.Font = Enum.Font.SourceSans
+TextButton_14.Text = "rotate parts"
+TextButton_14.TextColor3 = Color3.new(1, 1, 1)
+TextButton_14.TextSize = 16
+TextButton_14.TextWrapped = true
+
+TextButton_15.Parent = Page1
+TextButton_15.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_15.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_15.Position = UDim2.new(0.751295328, 0, 0.239035085, 0)
+TextButton_15.Size = UDim2.new(0, 87, 0, 35)
+TextButton_15.Font = Enum.Font.SourceSans
+TextButton_15.Text = "6"
+TextButton_15.TextColor3 = Color3.new(1, 1, 1)
+TextButton_15.TextSize = 30
+TextButton_15.TextWrapped = true
+
+ImageLabel_11.Parent = Page1
+ImageLabel_11.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_11.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_11.BorderSizePixel = 0
+ImageLabel_11.Position = UDim2.new(0.751295328, 0, 0.315789461, 0)
+ImageLabel_11.Size = UDim2.new(0, 87, 0, 47)
+ImageLabel_11.Image = "rbxassetid://96293852335430"
+
+TextButton_16.Parent = Page1
+TextButton_16.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_16.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_16.Position = UDim2.new(0.751295328, 0, 0.517543852, 0)
+TextButton_16.Size = UDim2.new(0, 87, 0, 35)
+TextButton_16.Font = Enum.Font.SourceSans
+TextButton_16.Text = "6"
+TextButton_16.TextColor3 = Color3.new(1, 1, 1)
+TextButton_16.TextSize = 30
+TextButton_16.TextWrapped = true
+
+ImageLabel_12.Parent = Page1
+ImageLabel_12.BackgroundColor3 = Color3.new(0, 0, 0)
+ImageLabel_12.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_12.BorderSizePixel = 0
+ImageLabel_12.Position = UDim2.new(0.751295328, 0, 0.594298244, 0)
+ImageLabel_12.Size = UDim2.new(0, 87, 0, 43)
+ImageLabel_12.Image = "rbxassetid://96293852335430"
+
+Frame_2.Parent = Page1
+Frame_2.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame_2.BorderColor3 = Color3.new(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.6006127, 0, 0.768771231, 0)
+Frame_2.Size = UDim2.new(0, 231, 0, 105)
+
+skybutton.Name = "skybutton"
+skybutton.Parent = Frame_2
+skybutton.BackgroundColor3 = Color3.new(0, 0, 0)
+skybutton.BorderColor3 = Color3.new(1, 0, 0)
+skybutton.Position = UDim2.new(-8.66646369e-05, 0, 0.00386090949, 0)
+skybutton.Size = UDim2.new(0, 123, 0, 35)
+skybutton.Font = Enum.Font.SourceSans
+skybutton.Text = "custom skybox"
+skybutton.TextColor3 = Color3.new(1, 1, 1)
+skybutton.TextSize = 14
+
+skyid.Name = "skyid"
+skyid.Parent = Frame_2
+skyid.BackgroundColor3 = Color3.new(0, 0, 0)
+skyid.BorderColor3 = Color3.new(1, 0, 0)
+skyid.Position = UDim2.new(0.00106164184, 0, 0.403860897, 0)
+skyid.Size = UDim2.new(0, 231, 0, 53)
+skyid.Font = Enum.Font.SourceSans
+skyid.PlaceholderColor3 = Color3.new(0.517647, 0.517647, 0.517647)
+skyid.PlaceholderText = "put image/decal id here"
+skyid.Text = ""
+skyid.TextColor3 = Color3.new(1, 1, 1)
+skyid.TextScaled = true
+skyid.TextSize = 14
+skyid.TextWrapped = true
+
+decalinsert.Name = "decalinsert"
+decalinsert.Parent = Frame_2
+decalinsert.BackgroundColor3 = Color3.new(0, 0, 0)
+decalinsert.BorderColor3 = Color3.new(1, 0, 0)
+decalinsert.Position = UDim2.new(0.528831303, 0, 0.00386090949, 0)
+decalinsert.Size = UDim2.new(0, 108, 0, 35)
+decalinsert.Font = Enum.Font.SourceSans
+decalinsert.Text = "custom decal spam"
+decalinsert.TextColor3 = Color3.new(1, 1, 1)
+decalinsert.TextSize = 14
+
+Page2.Name = "Page2"
+Page2.Parent = MainFrame
+Page2.BackgroundColor3 = Color3.new(0, 0, 0)
+Page2.BorderColor3 = Color3.new(1, 0, 0)
+Page2.Position = UDim2.new(0, 0, 0.0988142267, 0)
+Page2.Size = UDim2.new(0, 579, 0, 456)
+Page2.Visible = false
+
+TextLabel_6.Parent = Page2
+TextLabel_6.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_6.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "hd admin and music page"
+TextLabel_6.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_6.TextSize = 22
+TextLabel_6.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_6.TextWrapped = true
+
+TextButton_17.Parent = Page2
+TextButton_17.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_17.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_17.Position = UDim2.new(0, 0, 0.239035085, 0)
+TextButton_17.Size = UDim2.new(0, 87, 0, 35)
+TextButton_17.Font = Enum.Font.SourceSans
+TextButton_17.Text = "god mode"
+TextButton_17.TextColor3 = Color3.new(1, 1, 1)
+TextButton_17.TextSize = 16
+TextButton_17.TextWrapped = true
+
+TextLabel_7.Parent = Page2
+TextLabel_7.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_7.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_7.Position = UDim2.new(0, 0, 0.403508782, 0)
+TextLabel_7.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "--- music ---"
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextSize = 22
+TextLabel_7.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Page2
+TextLabel_8.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_8.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_8.Position = UDim2.new(0, 0, 0.142543852, 0)
+TextLabel_8.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "--- commands ---"
+TextLabel_8.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_8.TextSize = 22
+TextLabel_8.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_8.TextWrapped = true
+
+TextButton_18.Parent = Page2
+TextButton_18.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_18.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_18.Position = UDim2.new(0.150259063, 0, 0.239035085, 0)
+TextButton_18.Size = UDim2.new(0, 87, 0, 35)
+TextButton_18.Font = Enum.Font.SourceSans
+TextButton_18.Text = "bring all"
+TextButton_18.TextColor3 = Color3.new(1, 1, 1)
+TextButton_18.TextSize = 16
+TextButton_18.TextWrapped = true
+
+TextButton_19.Parent = Page2
+TextButton_19.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_19.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_19.Position = UDim2.new(0.300518125, 0, 0.239035085, 0)
+TextButton_19.Size = UDim2.new(0, 87, 0, 35)
+TextButton_19.Font = Enum.Font.SourceSans
+TextButton_19.Text = "speed self 70"
+TextButton_19.TextColor3 = Color3.new(1, 1, 1)
+TextButton_19.TextSize = 16
+TextButton_19.TextWrapped = true
+
+TextButton_20.Parent = Page2
+TextButton_20.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_20.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_20.Position = UDim2.new(0.450777203, 0, 0.239035085, 0)
+TextButton_20.Size = UDim2.new(0, 87, 0, 35)
+TextButton_20.Font = Enum.Font.SourceSans
+TextButton_20.Text = "rank friends mod"
+TextButton_20.TextColor3 = Color3.new(1, 1, 1)
+TextButton_20.TextSize = 16
+TextButton_20.TextWrapped = true
+
+TextButton_21.Parent = Page2
+TextButton_21.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_21.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_21.Position = UDim2.new(0.601036251, 0, 0.239035085, 0)
+TextButton_21.Size = UDim2.new(0, 87, 0, 35)
+TextButton_21.Font = Enum.Font.SourceSans
+TextButton_21.Text = "Builderman join message!!"
+TextButton_21.TextColor3 = Color3.new(1, 1, 1)
+TextButton_21.TextSize = 16
+TextButton_21.TextWrapped = true
+
+TextButton_22.Parent = Page2
+TextButton_22.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_22.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_22.Position = UDim2.new(0.751295328, 0, 0.239035085, 0)
+TextButton_22.Size = UDim2.new(0, 87, 0, 35)
+TextButton_22.Font = Enum.Font.SourceSans
+TextButton_22.Text = "give all btools  (not recommended)"
+TextButton_22.TextColor3 = Color3.new(1, 1, 1)
+TextButton_22.TextSize = 12
+TextButton_22.TextWrapped = true
+
+TextButton_23.Parent = Page2
+TextButton_23.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_23.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_23.Position = UDim2.new(0, 0, 0.5, 0)
+TextButton_23.Size = UDim2.new(0, 87, 0, 35)
+TextButton_23.Font = Enum.Font.SourceSans
+TextButton_23.Text = "theme"
+TextButton_23.TextColor3 = Color3.new(1, 1, 1)
+TextButton_23.TextSize = 16
+TextButton_23.TextWrapped = true
+
+TextButton_24.Parent = Page2
+TextButton_24.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_24.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_24.Position = UDim2.new(0.150259063, 0, 0.5, 0)
+TextButton_24.Size = UDim2.new(0, 87, 0, 35)
+TextButton_24.Font = Enum.Font.SourceSans
+TextButton_24.Text = "random bypass"
+TextButton_24.TextColor3 = Color3.new(1, 1, 1)
+TextButton_24.TextSize = 16
+TextButton_24.TextWrapped = true
+
+TextButton_25.Parent = Page2
+TextButton_25.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_25.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_25.Position = UDim2.new(0.300518125, 0, 0.5, 0)
+TextButton_25.Size = UDim2.new(0, 87, 0, 35)
+TextButton_25.Font = Enum.Font.SourceSans
+TextButton_25.Text = "omfg - i love you"
+TextButton_25.TextColor3 = Color3.new(1, 1, 1)
+TextButton_25.TextSize = 16
+TextButton_25.TextWrapped = true
+
+TextButton_26.Parent = Page2
+TextButton_26.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_26.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_26.Position = UDim2.new(0.450777203, 0, 0.5, 0)
+TextButton_26.Size = UDim2.new(0, 87, 0, 35)
+TextButton_26.Font = Enum.Font.SourceSans
+TextButton_26.Text = "omfg - hello"
+TextButton_26.TextColor3 = Color3.new(1, 1, 1)
+TextButton_26.TextSize = 16
+TextButton_26.TextWrapped = true
+
+TextButton_27.Parent = Page2
+TextButton_27.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_27.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_27.Position = UDim2.new(0.601036251, 0, 0.5, 0)
+TextButton_27.Size = UDim2.new(0, 87, 0, 35)
+TextButton_27.Font = Enum.Font.SourceSans
+TextButton_27.Text = "gta radio station"
+TextButton_27.TextColor3 = Color3.new(1, 1, 1)
+TextButton_27.TextSize = 16
+TextButton_27.TextWrapped = true
+
+TextButton_28.Parent = Page2
+TextButton_28.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_28.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_28.Position = UDim2.new(0.751295328, 0, 0.5, 0)
+TextButton_28.Size = UDim2.new(0, 87, 0, 35)
+TextButton_28.Font = Enum.Font.SourceSans
+TextButton_28.Text = "soviet anthem"
+TextButton_28.TextColor3 = Color3.new(1, 1, 1)
+TextButton_28.TextSize = 16
+TextButton_28.TextWrapped = true
+
+TextButton_29.Parent = Page2
+TextButton_29.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_29.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_29.Position = UDim2.new(0, 0, 0.576754391, 0)
+TextButton_29.Size = UDim2.new(0, 87, 0, 35)
+TextButton_29.Font = Enum.Font.SourceSans
+TextButton_29.Text = "minecraft"
+TextButton_29.TextColor3 = Color3.new(1, 1, 1)
+TextButton_29.TextSize = 16
+TextButton_29.TextWrapped = true
+
+TextButton_30.Parent = Page2
+TextButton_30.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_30.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_30.Position = UDim2.new(0.150259063, 0, 0.576754391, 0)
+TextButton_30.Size = UDim2.new(0, 87, 0, 35)
+TextButton_30.Font = Enum.Font.SourceSans
+TextButton_30.Text = "go to bed right now"
+TextButton_30.TextColor3 = Color3.new(1, 1, 1)
+TextButton_30.TextSize = 16
+TextButton_30.TextWrapped = true
+
+TextButton_31.Parent = Page2
+TextButton_31.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_31.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_31.Position = UDim2.new(0.300518125, 0, 0.576754391, 0)
+TextButton_31.Size = UDim2.new(0, 87, 0, 35)
+TextButton_31.Font = Enum.Font.SourceSans
+TextButton_31.Text = "stable ranaldo - payphone"
+TextButton_31.TextColor3 = Color3.new(1, 1, 1)
+TextButton_31.TextSize = 16
+TextButton_31.TextWrapped = true
+
+TextButton_32.Parent = Page2
+TextButton_32.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_32.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_32.Position = UDim2.new(0.450777203, 0, 0.576754391, 0)
+TextButton_32.Size = UDim2.new(0, 87, 0, 35)
+TextButton_32.Font = Enum.Font.SourceSans
+TextButton_32.Text = "reeses puffs"
+TextButton_32.TextColor3 = Color3.new(1, 1, 1)
+TextButton_32.TextSize = 16
+TextButton_32.TextWrapped = true
+
+TextButton_33.Parent = Page2
+TextButton_33.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_33.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_33.Position = UDim2.new(0.601036251, 0, 0.576754391, 0)
+TextButton_33.Size = UDim2.new(0, 87, 0, 35)
+TextButton_33.Font = Enum.Font.SourceSans
+TextButton_33.Text = "spooky scary skeletons"
+TextButton_33.TextColor3 = Color3.new(1, 1, 1)
+TextButton_33.TextSize = 16
+TextButton_33.TextWrapped = true
+
+TextButton_34.Parent = Page2
+TextButton_34.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_34.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_34.Position = UDim2.new(0.751295328, 0, 0.576754391, 0)
+TextButton_34.Size = UDim2.new(0, 87, 0, 35)
+TextButton_34.Font = Enum.Font.SourceSans
+TextButton_34.Text = "blue2spooky theme"
+TextButton_34.TextColor3 = Color3.new(1, 1, 1)
+TextButton_34.TextSize = 16
+TextButton_34.TextWrapped = true
+
+TextButton_35.Parent = Page2
+TextButton_35.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_35.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_35.Position = UDim2.new(0, 0, 0.653508782, 0)
+TextButton_35.Size = UDim2.new(0, 87, 0, 35)
+TextButton_35.Font = Enum.Font.SourceSans
+TextButton_35.Text = "meet yo maker"
+TextButton_35.TextColor3 = Color3.new(1, 1, 1)
+TextButton_35.TextSize = 16
+TextButton_35.TextWrapped = true
+
+TextButton_36.Parent = Page2
+TextButton_36.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_36.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_36.Position = UDim2.new(0.150259063, 0, 0.653508782, 0)
+TextButton_36.Size = UDim2.new(0, 87, 0, 35)
+TextButton_36.Font = Enum.Font.SourceSans
+TextButton_36.Text = "team fat theme"
+TextButton_36.TextColor3 = Color3.new(1, 1, 1)
+TextButton_36.TextSize = 16
+TextButton_36.TextWrapped = true
+
+TextButton_37.Parent = Page2
+TextButton_37.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_37.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_37.Position = UDim2.new(0.300518125, 0, 0.653508782, 0)
+TextButton_37.Size = UDim2.new(0, 87, 0, 35)
+TextButton_37.Font = Enum.Font.SourceSans
+TextButton_37.Text = "old town road"
+TextButton_37.TextColor3 = Color3.new(1, 1, 1)
+TextButton_37.TextSize = 16
+TextButton_37.TextWrapped = true
+
+TextButton_38.Parent = Page2
+TextButton_38.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_38.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_38.Position = UDim2.new(0.450777203, 0, 0.653508782, 0)
+TextButton_38.Size = UDim2.new(0, 87, 0, 35)
+TextButton_38.Font = Enum.Font.SourceSans
+TextButton_38.Text = "im blue"
+TextButton_38.TextColor3 = Color3.new(1, 1, 1)
+TextButton_38.TextSize = 16
+TextButton_38.TextWrapped = true
+
+TextButton_39.Parent = Page2
+TextButton_39.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_39.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_39.Position = UDim2.new(0.601036251, 0, 0.653508782, 0)
+TextButton_39.Size = UDim2.new(0, 87, 0, 35)
+TextButton_39.Font = Enum.Font.SourceSans
+TextButton_39.Text = "creeper? aw man"
+TextButton_39.TextColor3 = Color3.new(1, 1, 1)
+TextButton_39.TextSize = 16
+TextButton_39.TextWrapped = true
+
+TextButton_40.Parent = Page2
+TextButton_40.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_40.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_40.Position = UDim2.new(0.751295328, 0, 0.653508782, 0)
+TextButton_40.Size = UDim2.new(0, 87, 0, 35)
+TextButton_40.Font = Enum.Font.SourceSans
+TextButton_40.Text = "2014 mario.exe"
+TextButton_40.TextColor3 = Color3.new(1, 1, 1)
+TextButton_40.TextSize = 16
+TextButton_40.TextWrapped = true
+
+TextButton_41.Parent = Page2
+TextButton_41.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_41.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_41.Position = UDim2.new(0, 0, 0.730263174, 0)
+TextButton_41.Size = UDim2.new(0, 87, 0, 35)
+TextButton_41.Font = Enum.Font.SourceSans
+TextButton_41.Text = "opening theme"
+TextButton_41.TextColor3 = Color3.new(1, 1, 1)
+TextButton_41.TextSize = 16
+TextButton_41.TextWrapped = true
+
+TextButton_42.Parent = Page2
+TextButton_42.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_42.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_42.Position = UDim2.new(0.150259063, 0, 0.730263174, 0)
+TextButton_42.Size = UDim2.new(0, 87, 0, 35)
+TextButton_42.Font = Enum.Font.SourceSans
+TextButton_42.Text = "opening theme alt version"
+TextButton_42.TextColor3 = Color3.new(1, 1, 1)
+TextButton_42.TextSize = 16
+TextButton_42.TextWrapped = true
+
+TextButton_43.Parent = Page2
+TextButton_43.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_43.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_43.Position = UDim2.new(0.300518125, 0, 0.730263174, 0)
+TextButton_43.Size = UDim2.new(0, 87, 0, 35)
+TextButton_43.Font = Enum.Font.SourceSans
+TextButton_43.Text = "windmill"
+TextButton_43.TextColor3 = Color3.new(1, 1, 1)
+TextButton_43.TextSize = 16
+TextButton_43.TextWrapped = true
+
+TextButton_44.Parent = Page2
+TextButton_44.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_44.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_44.Position = UDim2.new(0.450777203, 0, 0.730263174, 0)
+TextButton_44.Size = UDim2.new(0, 87, 0, 35)
+TextButton_44.Font = Enum.Font.SourceSans
+TextButton_44.Text = "stadium rave"
+TextButton_44.TextColor3 = Color3.new(1, 1, 1)
+TextButton_44.TextSize = 16
+TextButton_44.TextWrapped = true
+
+TextButton_45.Parent = Page2
+TextButton_45.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_45.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_45.Position = UDim2.new(0.601036251, 0, 0.730263174, 0)
+TextButton_45.Size = UDim2.new(0, 87, 0, 35)
+TextButton_45.Font = Enum.Font.SourceSans
+TextButton_45.Text = "theme 2"
+TextButton_45.TextColor3 = Color3.new(1, 1, 1)
+TextButton_45.TextSize = 16
+TextButton_45.TextWrapped = true
+
+TextButton_46.Parent = Page2
+TextButton_46.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_46.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_46.Position = UDim2.new(0.751295328, 0, 0.730263174, 0)
+TextButton_46.Size = UDim2.new(0, 87, 0, 35)
+TextButton_46.Font = Enum.Font.SourceSans
+TextButton_46.Text = "theme 3         (MLG EPIC)"
+TextButton_46.TextColor3 = Color3.new(1, 1, 1)
+TextButton_46.TextSize = 16
+TextButton_46.TextWrapped = true
+
+TextButton_47.Parent = Page2
+TextButton_47.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_47.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_47.Position = UDim2.new(0.150259063, 0, 0.239035085, 0)
+TextButton_47.Size = UDim2.new(0, 87, 0, 35)
+TextButton_47.Font = Enum.Font.SourceSans
+TextButton_47.Text = "bring all"
+TextButton_47.TextColor3 = Color3.new(1, 1, 1)
+TextButton_47.TextSize = 16
+TextButton_47.TextWrapped = true
+
+TextButton_48.Parent = Page2
+TextButton_48.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_48.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_48.Position = UDim2.new(0, 0, 0.315789461, 0)
+TextButton_48.Size = UDim2.new(0, 87, 0, 35)
+TextButton_48.Font = Enum.Font.SourceSans
+TextButton_48.Text = "time day"
+TextButton_48.TextColor3 = Color3.new(1, 1, 1)
+TextButton_48.TextSize = 16
+TextButton_48.TextWrapped = true
+
+TextButton_49.Parent = Page2
+TextButton_49.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_49.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_49.Position = UDim2.new(0.150259063, 0, 0.315789461, 0)
+TextButton_49.Size = UDim2.new(0, 87, 0, 35)
+TextButton_49.Font = Enum.Font.SourceSans
+TextButton_49.Text = "time night"
+TextButton_49.TextColor3 = Color3.new(1, 1, 1)
+TextButton_49.TextSize = 16
+TextButton_49.TextWrapped = true
+
+TextButton_50.Parent = Page2
+TextButton_50.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_50.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_50.Position = UDim2.new(0, 0, 0.807017565, 0)
+TextButton_50.Size = UDim2.new(0, 87, 0, 35)
+TextButton_50.Font = Enum.Font.SourceSans
+TextButton_50.Text = "funky town"
+TextButton_50.TextColor3 = Color3.new(1, 1, 1)
+TextButton_50.TextSize = 16
+TextButton_50.TextWrapped = true
+
+TextButton_51.Parent = Page2
+TextButton_51.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_51.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_51.Position = UDim2.new(0.150259063, 0, 0.807017565, 0)
+TextButton_51.Size = UDim2.new(0, 87, 0, 35)
+TextButton_51.Font = Enum.Font.SourceSans
+TextButton_51.Text = "california girls"
+TextButton_51.TextColor3 = Color3.new(1, 1, 1)
+TextButton_51.TextSize = 16
+TextButton_51.TextWrapped = true
+
+TextButton_52.Parent = Page2
+TextButton_52.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_52.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_52.Position = UDim2.new(0.300518125, 0, 0.807017565, 0)
+TextButton_52.Size = UDim2.new(0, 87, 0, 35)
+TextButton_52.Font = Enum.Font.SourceSans
+TextButton_52.Text = "gangnam style"
+TextButton_52.TextColor3 = Color3.new(1, 1, 1)
+TextButton_52.TextSize = 16
+TextButton_52.TextWrapped = true
+
+TextButton_53.Parent = Page2
+TextButton_53.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_53.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_53.Position = UDim2.new(0.450777203, 0, 0.807017565, 0)
+TextButton_53.Size = UDim2.new(0, 87, 0, 35)
+TextButton_53.Font = Enum.Font.SourceSans
+TextButton_53.Text = "meepcity music"
+TextButton_53.TextColor3 = Color3.new(1, 1, 1)
+TextButton_53.TextSize = 16
+TextButton_53.TextWrapped = true
+
+TextButton_54.Parent = Page2
+TextButton_54.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_54.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_54.Position = UDim2.new(0.601036251, 0, 0.807017565, 0)
+TextButton_54.Size = UDim2.new(0, 87, 0, 35)
+TextButton_54.Font = Enum.Font.SourceSans
+TextButton_54.Text = "star"
+TextButton_54.TextColor3 = Color3.new(1, 1, 1)
+TextButton_54.TextSize = 16
+TextButton_54.TextWrapped = true
+
+TextButton_55.Parent = Page2
+TextButton_55.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_55.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_55.Position = UDim2.new(0.751295328, 0, 0.807017565, 0)
+TextButton_55.Size = UDim2.new(0, 87, 0, 35)
+TextButton_55.Font = Enum.Font.SourceSans
+TextButton_55.Text = "snoopdogg"
+TextButton_55.TextColor3 = Color3.new(1, 1, 1)
+TextButton_55.TextSize = 16
+TextButton_55.TextWrapped = true
+
+TextButton_56.Parent = Page2
+TextButton_56.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_56.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_56.Position = UDim2.new(0.300518125, 0, 0.315789461, 0)
+TextButton_56.Size = UDim2.new(0, 87, 0, 35)
+TextButton_56.Font = Enum.Font.SourceSans
+TextButton_56.Text = "message"
+TextButton_56.TextColor3 = Color3.new(1, 1, 1)
+TextButton_56.TextSize = 16
+TextButton_56.TextWrapped = true
+
+TextButton_57.Parent = Page2
+TextButton_57.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_57.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_57.Position = UDim2.new(0.450777203, 0, 0.315789461, 0)
+TextButton_57.Size = UDim2.new(0, 87, 0, 35)
+TextButton_57.Font = Enum.Font.SourceSans
+TextButton_57.Text = "shutdown server"
+TextButton_57.TextColor3 = Color3.new(1, 1, 1)
+TextButton_57.TextSize = 16
+TextButton_57.TextWrapped = true
+
+TextButton_58.Parent = Page2
+TextButton_58.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_58.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_58.Position = UDim2.new(0.601036251, 0, 0.315789461, 0)
+TextButton_58.Size = UDim2.new(0, 87, 0, 35)
+TextButton_58.Font = Enum.Font.SourceSans
+TextButton_58.Text = "kick nonfriends"
+TextButton_58.TextColor3 = Color3.new(1, 1, 1)
+TextButton_58.TextSize = 16
+TextButton_58.TextWrapped = true
+
+TextButton_59.Parent = Page2
+TextButton_59.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_59.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_59.Position = UDim2.new(0.751295328, 0, 0.315789461, 0)
+TextButton_59.Size = UDim2.new(0, 87, 0, 35)
+TextButton_59.Font = Enum.Font.SourceSans
+TextButton_59.Text = "respawn"
+TextButton_59.TextColor3 = Color3.new(1, 1, 1)
+TextButton_59.TextSize = 16
+TextButton_59.TextWrapped = true
+
+TextButton_60.Parent = Page2
+TextButton_60.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_60.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_60.Position = UDim2.new(0, 0, 0.883771956, 0)
+TextButton_60.Size = UDim2.new(0, 87, 0, 35)
+TextButton_60.Font = Enum.Font.SourceSans
+TextButton_60.Text = "scary music"
+TextButton_60.TextColor3 = Color3.new(1, 1, 1)
+TextButton_60.TextSize = 16
+TextButton_60.TextWrapped = true
+
+TextButton_61.Parent = Page2
+TextButton_61.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_61.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_61.Position = UDim2.new(0.150259063, 0, 0.883771956, 0)
+TextButton_61.Size = UDim2.new(0, 87, 0, 35)
+TextButton_61.Font = Enum.Font.SourceSans
+TextButton_61.Text = "lavender town"
+TextButton_61.TextColor3 = Color3.new(1, 1, 1)
+TextButton_61.TextSize = 16
+TextButton_61.TextWrapped = true
+
+TextButton_62.Parent = Page2
+TextButton_62.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_62.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_62.Position = UDim2.new(0.300518125, 0, 0.883771956, 0)
+TextButton_62.Size = UDim2.new(0, 87, 0, 35)
+TextButton_62.Font = Enum.Font.SourceSans
+TextButton_62.Text = "bad apple"
+TextButton_62.TextColor3 = Color3.new(1, 1, 1)
+TextButton_62.TextSize = 16
+TextButton_62.TextWrapped = true
+
+TextButton_63.Parent = Page2
+TextButton_63.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_63.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_63.Position = UDim2.new(0.450777203, 0, 0.883771956, 0)
+TextButton_63.Size = UDim2.new(0, 87, 0, 35)
+TextButton_63.Font = Enum.Font.SourceSans
+TextButton_63.Text = "rock that body"
+TextButton_63.TextColor3 = Color3.new(1, 1, 1)
+TextButton_63.TextSize = 16
+TextButton_63.TextWrapped = true
+
+TextButton_64.Parent = Page2
+TextButton_64.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_64.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_64.Position = UDim2.new(0.601036251, 0, 0.883771956, 0)
+TextButton_64.Size = UDim2.new(0, 87, 0, 35)
+TextButton_64.Font = Enum.Font.SourceSans
+TextButton_64.Text = "jazz"
+TextButton_64.TextColor3 = Color3.new(1, 1, 1)
+TextButton_64.TextSize = 16
+TextButton_64.TextWrapped = true
+
+TextButton_65.Parent = Page2
+TextButton_65.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_65.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_65.Position = UDim2.new(0.751295328, 0, 0.883771956, 0)
+TextButton_65.Size = UDim2.new(0, 87, 0, 35)
+TextButton_65.Font = Enum.Font.SourceSans
+TextButton_65.Text = "random 8bit music"
+TextButton_65.TextColor3 = Color3.new(1, 1, 1)
+TextButton_65.TextSize = 16
+TextButton_65.TextWrapped = true
+
+Page3.Name = "Page3"
+Page3.Parent = MainFrame
+Page3.BackgroundColor3 = Color3.new(0, 0, 0)
+Page3.BorderColor3 = Color3.new(1, 0, 0)
+Page3.Position = UDim2.new(0, 0, 0.0988142267, 0)
+Page3.Size = UDim2.new(0, 579, 0, 456)
+Page3.Visible = false
+
+TextLabel_9.Parent = Page3
+TextLabel_9.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_9.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_9.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "maps and random shit"
+TextLabel_9.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_9.TextSize = 22
+TextLabel_9.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_9.TextWrapped = true
+
+randomobby.Name = "randomobby"
+randomobby.Parent = Page3
+randomobby.BackgroundColor3 = Color3.new(0, 0, 0)
+randomobby.BorderColor3 = Color3.new(1, 0, 0)
+randomobby.Position = UDim2.new(0, 0, 0.239035085, 0)
+randomobby.Size = UDim2.new(0, 87, 0, 35)
+randomobby.Font = Enum.Font.SourceSans
+randomobby.Text = "random obby"
+randomobby.TextColor3 = Color3.new(1, 1, 1)
+randomobby.TextSize = 16
+randomobby.TextWrapped = true
+
+TextLabel_10.Parent = Page3
+TextLabel_10.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_10.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_10.Position = UDim2.new(0, 0, 0.129385963, 0)
+TextLabel_10.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "--- maps ---"
+TextLabel_10.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_10.TextSize = 22
+TextLabel_10.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = Page3
+TextLabel_11.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_11.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_11.Position = UDim2.new(0, 0, 0.480263144, 0)
+TextLabel_11.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "random shit"
+TextLabel_11.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_11.TextSize = 22
+TextLabel_11.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_11.TextWrapped = true
+
+horror.Name = "horror"
+horror.Parent = Page3
+horror.BackgroundColor3 = Color3.new(0, 0, 0)
+horror.BorderColor3 = Color3.new(1, 0, 0)
+horror.Position = UDim2.new(0.150259063, 0, 0.239035085, 0)
+horror.Size = UDim2.new(0, 87, 0, 35)
+horror.Font = Enum.Font.SourceSans
+horror.Text = "horror map"
+horror.TextColor3 = Color3.new(1, 1, 1)
+horror.TextSize = 16
+horror.TextWrapped = true
+
+brookhaven.Name = "brookhaven"
+brookhaven.Parent = Page3
+brookhaven.BackgroundColor3 = Color3.new(0, 0, 0)
+brookhaven.BorderColor3 = Color3.new(1, 0, 0)
+brookhaven.Position = UDim2.new(0.300518125, 0, 0.239035085, 0)
+brookhaven.Size = UDim2.new(0, 87, 0, 35)
+brookhaven.Font = Enum.Font.SourceSans
+brookhaven.Text = "brookhaven"
+brookhaven.TextColor3 = Color3.new(1, 1, 1)
+brookhaven.TextSize = 16
+brookhaven.TextWrapped = true
+
+randomcity.Name = "randomcity"
+randomcity.Parent = Page3
+randomcity.BackgroundColor3 = Color3.new(0, 0, 0)
+randomcity.BorderColor3 = Color3.new(1, 0, 0)
+randomcity.Position = UDim2.new(0.450777203, 0, 0.239035085, 0)
+randomcity.Size = UDim2.new(0, 87, 0, 35)
+randomcity.Font = Enum.Font.SourceSans
+randomcity.Text = "random city"
+randomcity.TextColor3 = Color3.new(1, 1, 1)
+randomcity.TextSize = 16
+randomcity.TextWrapped = true
+
+ragdollengine.Name = "ragdollengine"
+ragdollengine.Parent = Page3
+ragdollengine.BackgroundColor3 = Color3.new(0, 0, 0)
+ragdollengine.BorderColor3 = Color3.new(1, 0, 0)
+ragdollengine.Position = UDim2.new(0.601036251, 0, 0.239035085, 0)
+ragdollengine.Size = UDim2.new(0, 87, 0, 35)
+ragdollengine.Font = Enum.Font.SourceSans
+ragdollengine.Text = "ragdoll engine"
+ragdollengine.TextColor3 = Color3.new(1, 1, 1)
+ragdollengine.TextSize = 16
+ragdollengine.TextWrapped = true
+
+scp087.Name = "scp087"
+scp087.Parent = Page3
+scp087.BackgroundColor3 = Color3.new(0, 0, 0)
+scp087.BorderColor3 = Color3.new(1, 0, 0)
+scp087.Position = UDim2.new(0.751295328, 0, 0.239035085, 0)
+scp087.Size = UDim2.new(0, 87, 0, 35)
+scp087.Font = Enum.Font.SourceSans
+scp087.Text = "scp 078"
+scp087.TextColor3 = Color3.new(1, 1, 1)
+scp087.TextSize = 16
+scp087.TextWrapped = true
+
+mw2rust.Name = "mw2rust"
+mw2rust.Parent = Page3
+mw2rust.BackgroundColor3 = Color3.new(0, 0, 0)
+mw2rust.BorderColor3 = Color3.new(1, 0, 0)
+mw2rust.Position = UDim2.new(0, 0, 0.315789461, 0)
+mw2rust.Size = UDim2.new(0, 87, 0, 35)
+mw2rust.Font = Enum.Font.SourceSans
+mw2rust.Text = "rust from mw2"
+mw2rust.TextColor3 = Color3.new(1, 1, 1)
+mw2rust.TextSize = 16
+mw2rust.TextWrapped = true
+
+TextButton_66.Parent = Page3
+TextButton_66.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_66.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_66.Position = UDim2.new(0, 0, 0.583333313, 0)
+TextButton_66.Size = UDim2.new(0, 87, 0, 35)
+TextButton_66.Font = Enum.Font.SourceSans
+TextButton_66.Text = "global force place (effects all servers)"
+TextButton_66.TextColor3 = Color3.new(1, 1, 1)
+TextButton_66.TextSize = 12
+TextButton_66.TextWrapped = true
+
+TextButton_67.Parent = Page3
+TextButton_67.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_67.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_67.Position = UDim2.new(0.150259063, 0, 0.583333313, 0)
+TextButton_67.Size = UDim2.new(0, 87, 0, 35)
+TextButton_67.Font = Enum.Font.SourceSans
+TextButton_67.Text = "forceplace all"
+TextButton_67.TextColor3 = Color3.new(1, 1, 1)
+TextButton_67.TextSize = 16
+TextButton_67.TextWrapped = true
+
+TextButton_68.Parent = Page3
+TextButton_68.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_68.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_68.Position = UDim2.new(0.300518125, 0, 0.583333313, 0)
+TextButton_68.Size = UDim2.new(0, 87, 0, 35)
+TextButton_68.Font = Enum.Font.SourceSans
+TextButton_68.Text = "place all"
+TextButton_68.TextColor3 = Color3.new(1, 1, 1)
+TextButton_68.TextSize = 16
+TextButton_68.TextWrapped = true
+
+TrafficConeHaxRealm.Name = "TrafficConeHaxRealm"
+TrafficConeHaxRealm.Parent = Page3
+TrafficConeHaxRealm.BackgroundColor3 = Color3.new(0, 0, 0)
+TrafficConeHaxRealm.BorderColor3 = Color3.new(1, 0, 0)
+TrafficConeHaxRealm.Position = UDim2.new(0.150259063, 0, 0.315789461, 0)
+TrafficConeHaxRealm.Size = UDim2.new(0, 87, 0, 35)
+TrafficConeHaxRealm.Font = Enum.Font.SourceSans
+TrafficConeHaxRealm.Text = "TrafficConeHax realm"
+TrafficConeHaxRealm.TextColor3 = Color3.new(1, 1, 1)
+TrafficConeHaxRealm.TextSize = 16
+TrafficConeHaxRealm.TextWrapped = true
+
+oldobby.Name = "oldobby"
+oldobby.Parent = Page3
+oldobby.BackgroundColor3 = Color3.new(0, 0, 0)
+oldobby.BorderColor3 = Color3.new(1, 0, 0)
+oldobby.Position = UDim2.new(0.300518125, 0, 0.315789461, 0)
+oldobby.Size = UDim2.new(0, 87, 0, 35)
+oldobby.Font = Enum.Font.SourceSans
+oldobby.Text = "my old obby from 2025"
+oldobby.TextColor3 = Color3.new(1, 1, 1)
+oldobby.TextSize = 16
+oldobby.TextWrapped = true
+
+slap.Name = "slap"
+slap.Parent = Page3
+slap.BackgroundColor3 = Color3.new(0, 0, 0)
+slap.BorderColor3 = Color3.new(1, 0, 0)
+slap.Position = UDim2.new(0.450777203, 0, 0.315789461, 0)
+slap.Size = UDim2.new(0, 87, 0, 35)
+slap.Font = Enum.Font.SourceSans
+slap.Text = "slap tower"
+slap.TextColor3 = Color3.new(1, 1, 1)
+slap.TextSize = 16
+slap.TextWrapped = true
+
+nuketown.Name = "nuketown"
+nuketown.Parent = Page3
+nuketown.BackgroundColor3 = Color3.new(0, 0, 0)
+nuketown.BorderColor3 = Color3.new(1, 0, 0)
+nuketown.Position = UDim2.new(0.601036251, 0, 0.315789461, 0)
+nuketown.Size = UDim2.new(0, 87, 0, 35)
+nuketown.Font = Enum.Font.SourceSans
+nuketown.Text = "nuketown"
+nuketown.TextColor3 = Color3.new(1, 1, 1)
+nuketown.TextSize = 16
+nuketown.TextWrapped = true
+
+mc.Name = "mc"
+mc.Parent = Page3
+mc.BackgroundColor3 = Color3.new(0, 0, 0)
+mc.BorderColor3 = Color3.new(1, 0, 0)
+mc.Position = UDim2.new(0.751295328, 0, 0.315789461, 0)
+mc.Size = UDim2.new(0, 87, 0, 35)
+mc.Font = Enum.Font.SourceSans
+mc.Text = "giant mcdonalds"
+mc.TextColor3 = Color3.new(1, 1, 1)
+mc.TextSize = 16
+mc.TextWrapped = true
+
+TextButton_69.Parent = Page3
+TextButton_69.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_69.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_69.Position = UDim2.new(0.450777203, 0, 0.583333313, 0)
+TextButton_69.Size = UDim2.new(0, 87, 0, 35)
+TextButton_69.Font = Enum.Font.SourceSans
+TextButton_69.Text = "creepy fog"
+TextButton_69.TextColor3 = Color3.new(1, 1, 1)
+TextButton_69.TextSize = 16
+TextButton_69.TextWrapped = true
+
+TextButton_70.Parent = Page3
+TextButton_70.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_70.BorderColor3 = Color3.new(1, 0, 0)
+TextButton_70.Position = UDim2.new(0.601036251, 0, 0.583333313, 0)
+TextButton_70.Size = UDim2.new(0, 87, 0, 35)
+TextButton_70.Font = Enum.Font.SourceSans
+TextButton_70.Text = "remove fog"
+TextButton_70.TextColor3 = Color3.new(1, 1, 1)
+TextButton_70.TextSize = 16
+TextButton_70.TextWrapped = true
+
+Page4.Name = "Page4"
+Page4.Parent = MainFrame
+Page4.BackgroundColor3 = Color3.new(0, 0, 0)
+Page4.BorderColor3 = Color3.new(1, 0, 0)
+Page4.Position = UDim2.new(-4.56849989e-08, 0, 0.0988142267, 0)
+Page4.Size = UDim2.new(0, 579, 0, 456)
+Page4.Visible = false
+
+TextLabel_12.Parent = Page4
+TextLabel_12.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_12.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_12.Size = UDim2.new(0, 579, 0, 37)
+TextLabel_12.ZIndex = 2
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "credits"
+TextLabel_12.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_12.TextSize = 22
+TextLabel_12.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_12.TextWrapped = true
+
+TextLabel_13.Parent = Page4
+TextLabel_13.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_13.BackgroundTransparency = 1
+TextLabel_13.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0, 0, 0.0811403543, 0)
+TextLabel_13.Size = UDim2.new(0, 317, 0, 181)
+TextLabel_13.ZIndex = 3
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "colours based off of c00lgui, map loader script by 1sw0rd1, decal spam script by yoid, hd skybox script by me, if i missed any credits tell me and i will add them here."
+TextLabel_13.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 20
+TextLabel_13.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_13.TextWrapped = true
+TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_13.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_14.Parent = Page4
+TextLabel_14.BackgroundColor3 = Color3.new(0, 0, 0)
+TextLabel_14.BackgroundTransparency = 1
+TextLabel_14.BorderColor3 = Color3.new(1, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0, 0, 0.949561417, 0)
+TextLabel_14.Size = UDim2.new(0, 225, 0, 23)
+TextLabel_14.ZIndex = 2
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "Last updated 25th June 2026"
+TextLabel_14.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_14.TextSize = 20
+TextLabel_14.TextStrokeColor3 = Color3.new(1, 1, 1)
+TextLabel_14.TextWrapped = true
+TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_14.TextYAlignment = Enum.TextYAlignment.Top
+
+ImageLabel_13.Parent = Page4
+ImageLabel_13.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_13.BackgroundTransparency = 1
+ImageLabel_13.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_13.BorderSizePixel = 0
+ImageLabel_13.Position = UDim2.new(0.0518134721, 0, 0.109649122, 0)
+ImageLabel_13.Size = UDim2.new(0, 529, 0, 371)
+ImageLabel_13.Image = "rbxassetid://11914981726"
+
+-- Scripts
+
+local function SAECPZL_fake_script() -- screengui.BtoolGiver 
+	local script = Instance.new('LocalScript', screengui)
+
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local localPlayer = Players.LocalPlayer
+	
+	while true do
+		local backpack = localPlayer:FindFirstChildOfClass("Backpack")
+		local character = localPlayer.Character
+	
+		local hasF3X = false
+	
+		if backpack and backpack:FindFirstChild("Building Tools") then
+			hasF3X = true
+		elseif character and character:FindFirstChild("Building Tools") then
+			hasF3X = true
+		end
+	
+		if not hasF3X then
+			local hdClient = ReplicatedStorage:FindFirstChild("HDAdminHDClient")
+			if hdClient then
+				local signals = hdClient:FindFirstChild("Signals")
+				local RequestCommand = signals and signals:FindFirstChild("RequestCommandSilent")
+				if RequestCommand and RequestCommand:IsA("RemoteFunction") then
+					RequestCommand:InvokeServer(";btools me")
+				end
+			end
+		end
+	
+		task.wait(0.5)
+	end
+	
+end
+coroutine.wrap(SAECPZL_fake_script)()
+local function VIQGGI_fake_script() -- MainFrame.DragScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	
+	local TWEEN_INFO = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		local targetPosition = UDim2.new(
+			startPos.X.Scale, 
+			startPos.X.Offset + delta.X, 
+			startPos.Y.Scale, 
+			startPos.Y.Offset + delta.Y
+		)
+	
+	
+		TweenService:Create(gui, TWEEN_INFO, {Position = targetPosition}):Play()
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(VIQGGI_fake_script)()
+local function TFDFP_fake_script() -- MainFrame.PageChanger 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local MainFrame = script.Parent
+	local Buttons = MainFrame.Frame
+	
+	local function ShowPage(PageName)
+		-- Hide all pages
+		for i = 1, 4 do
+			local Page = MainFrame:FindFirstChild("Page" .. i)
+			if Page then
+				Page.Visible = false
+			end
+		end
+	
+		-- Show selected page
+		local Page = MainFrame:FindFirstChild(PageName)
+		if Page then
+			Page.Visible = true
+		end
+	end
+	
+	Buttons.Page1Button.MouseButton1Click:Connect(function()
+		ShowPage("Page1")
+	end)
+	
+	Buttons.Page2Button.MouseButton1Click:Connect(function()
+		ShowPage("Page2")
+	end)
+	
+	Buttons.Page3Button.MouseButton1Click:Connect(function()
+		ShowPage("Page3")
+	end)
+	
+	Buttons.Page4Button.MouseButton1Click:Connect(function()
+		ShowPage("Page4")
+	end)
+	
+	-- Start on Page1
+	ShowPage("Page1")
+end
+coroutine.wrap(TFDFP_fake_script)()
+local function OPRDLTY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local decalid = 112792392213725
+	
+	
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black")
+		wait(0.01)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function SetMesh(part, meshid, vertexColor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["VertexColor"] = vertexColor or Vector3.new(1, 1, 1)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function CreatePart(cf,parent)
+			local args = {[1] = "CreatePart", [2] = "Normal", [3] = cf, [4] = parent}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {[1] = "CreateMeshes", [2] = { [1] = { ["Part"] = part } } }
+			_(args)
+		end
+	
+		function SetTexture(part, texid)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["TextureId"] = "rbxassetid://"..texid } } }
+			_(args)
+		end
+	
+		function SetName(part, stringg)
+			local args = {[1] = "SetName", [2] = {[1] = part}, [3] = stringg}
+			_(args)
+		end
+	
+		function MeshResize(part,size)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["Scale"] = size } } }
+			_(args)
+		end
+	
+		function SetLocked(part,boolean)
+			local args = {[1] = "SetLocked", [2] = {[1] = part}, [3] = boolean}
+			_(args)
+		end
+	
+		function SetTrans(part,int)
+			local args = {[1] = "SyncMaterial", [2] = { [1] = { ["Part"] = part, ["Transparency"] = int } } }
+			_(args)
+		end
+	
+		function Color(part,color)
+			local args = {[1] = "SyncColor", [2] = { [1] = { ["Part"] = part, ["Color"] = color, ["UnionColoring"] = false } } }
+			_(args)
+		end
+	
+		function SyncLighting(part,brightness)
+			local args = {[1] = "SyncLighting", [2] = { [1] = { ["Part"] = part, ["LightType"] = "PointLight", ["Brightness"] = brightness } } }
+			_(args)
+		end
+	
+		function Sky(id, transparency, scale, vertexColor, offset)
+			local hrp = char.HumanoidRootPart.CFrame
+			local basePos = Vector3.new(math.floor(hrp.x), math.floor(hrp.y), math.floor(hrp.z))
+	
+			local spawnPos = basePos + (offset or Vector3.new(0,0,0))
+	
+			CreatePart(CFrame.new(spawnPos) + Vector3.new(0, -10, 0), workspace)
+			wait(0.01)
+	
+			for i, v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == spawnPos.X and v.CFrame.z == spawnPos.Z then
+	
+					SetName(v, "Sky")
+					AddMesh(v)
+	
+					SetMesh(v, "111891702759441", vertexColor)
+					SetTexture(v, id)
+					MeshResize(v, Vector3.new(scale, scale, scale))
+	
+					SetLocked(v, true)
+					SetTrans(v, transparency)
+	
+					local matArgs = {
+						[1] = "SyncMaterial",
+						[2] = { [1] = { ["Part"] = v, ["Material"] = Enum.Material.Neon } }
+					}
+					_(matArgs)
+	
+					Color(v, Color3.fromRGB(255, 255, 255))
+	
+					local lightArgs = {
+						[1] = "CreateLights",
+						[2] = { [1] = { ["Part"] = v, ["LightType"] = "PointLight" } }
+					}
+					_(lightArgs)
+	
+					SyncLighting(v, 0)
+				end
+			end
+		end
+	
+		Sky("dont change this", 0, 110000, Vector3.new(0,0,0), Vector3.new(-25, -10, 0))
+	
+		wait(0.01)
+	
+		Sky(decalid, 0.02, 99999, Vector3.new(4,4,4), Vector3.new(25, -10, 0))
+	end)
+end
+coroutine.wrap(OPRDLTY_fake_script)()
+local function KYGFBZ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local id = "137833619500777"
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+		function ClonePart(table,parent)
+			local args = {
+				[1] ="Clone",
+				[2] = table,
+				[3] = parent
+			}
+	
+			_(args)
+		end
+		function removetable(t)
+			local args = { [1] = "Remove", [2] = {} }
+			for _, v in pairs(t) do
+				if v ~= nil and v:IsA("Decal") then
+					table.insert(args[2],v)
+				end
+			end
+			if #args[2] > 0 then
+				_(args)
+			end
+		end
+	
+		local testpart = remote:InvokeServer("CreatePart","Normal",CFrame.new(102938,182939,2928458), workspace.Terrain)
+		local root = testpart 
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Top)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Top)
+		end)
+		repeat task.wait()until root:FindFirstChildOfClass("Decal")
+		local decals = {}
+		for i,v in root: GetDescendants()do
+			if v:IsA"Decal"then 
+				table.insert(decals,v)
+			end
+		end
+		function exPro(root)
+			task.spawn(ClonePart,decals,root)
+		end
+	
+	
+	
+		local decalsintothevoid={}
+	
+	
+		for i,v in game.workspace:GetDescendants() do
+			if v:IsA("Decal")then
+				table.insert(decalsintothevoid,v)--if any new decals destroy them
+			end
+		end
+		function asdf()
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name ~= "Sky" then
+					task.defer(exPro,v)
+				end
+			end 
+		end
+		asdf()
+	
+	
+		if #decalsintothevoid>0 then
+			task.spawn(removetable,decalsintothevoid)
+		end
+	
+	end)
+end
+coroutine.wrap(KYGFBZ_fake_script)()
+local function NQNR_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local decalid = 137215184006494
+	
+	
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black")
+		wait(0.01)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function SetMesh(part, meshid, vertexColor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["VertexColor"] = vertexColor or Vector3.new(1, 1, 1)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function CreatePart(cf,parent)
+			local args = {[1] = "CreatePart", [2] = "Normal", [3] = cf, [4] = parent}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {[1] = "CreateMeshes", [2] = { [1] = { ["Part"] = part } } }
+			_(args)
+		end
+	
+		function SetTexture(part, texid)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["TextureId"] = "rbxassetid://"..texid } } }
+			_(args)
+		end
+	
+		function SetName(part, stringg)
+			local args = {[1] = "SetName", [2] = {[1] = part}, [3] = stringg}
+			_(args)
+		end
+	
+		function MeshResize(part,size)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["Scale"] = size } } }
+			_(args)
+		end
+	
+		function SetLocked(part,boolean)
+			local args = {[1] = "SetLocked", [2] = {[1] = part}, [3] = boolean}
+			_(args)
+		end
+	
+		function SetTrans(part,int)
+			local args = {[1] = "SyncMaterial", [2] = { [1] = { ["Part"] = part, ["Transparency"] = int } } }
+			_(args)
+		end
+	
+		function Color(part,color)
+			local args = {[1] = "SyncColor", [2] = { [1] = { ["Part"] = part, ["Color"] = color, ["UnionColoring"] = false } } }
+			_(args)
+		end
+	
+		function SyncLighting(part,brightness)
+			local args = {[1] = "SyncLighting", [2] = { [1] = { ["Part"] = part, ["LightType"] = "PointLight", ["Brightness"] = brightness } } }
+			_(args)
+		end
+	
+		function Sky(id, transparency, scale, vertexColor, offset)
+			local hrp = char.HumanoidRootPart.CFrame
+			local basePos = Vector3.new(math.floor(hrp.x), math.floor(hrp.y), math.floor(hrp.z))
+	
+			local spawnPos = basePos + (offset or Vector3.new(0,0,0))
+	
+			CreatePart(CFrame.new(spawnPos) + Vector3.new(0, -10, 0), workspace)
+			wait(0.01)
+	
+			for i, v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == spawnPos.X and v.CFrame.z == spawnPos.Z then
+	
+					SetName(v, "Sky")
+					AddMesh(v)
+	
+					SetMesh(v, "111891702759441", vertexColor)
+					SetTexture(v, id)
+					MeshResize(v, Vector3.new(scale, scale, scale))
+	
+					SetLocked(v, true)
+					SetTrans(v, transparency)
+	
+					local matArgs = {
+						[1] = "SyncMaterial",
+						[2] = { [1] = { ["Part"] = v, ["Material"] = Enum.Material.Neon } }
+					}
+					_(matArgs)
+	
+					Color(v, Color3.fromRGB(255, 255, 255))
+	
+					local lightArgs = {
+						[1] = "CreateLights",
+						[2] = { [1] = { ["Part"] = v, ["LightType"] = "PointLight" } }
+					}
+					_(lightArgs)
+	
+					SyncLighting(v, 0)
+				end
+			end
+		end
+	
+		Sky("dont change this", 0, 110000, Vector3.new(0,0,0), Vector3.new(-25, -10, 0))
+	
+		wait(0.01)
+	
+		Sky(decalid, 0.02, 99999, Vector3.new(4,4,4), Vector3.new(25, -10, 0))
+	end)
+end
+coroutine.wrap(NQNR_fake_script)()
+local function RGZGORP_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local decalid = 84442191134852
+	
+	
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black")
+		wait(0.01)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function SetMesh(part, meshid, vertexColor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["VertexColor"] = vertexColor or Vector3.new(1, 1, 1)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function CreatePart(cf,parent)
+			local args = {[1] = "CreatePart", [2] = "Normal", [3] = cf, [4] = parent}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {[1] = "CreateMeshes", [2] = { [1] = { ["Part"] = part } } }
+			_(args)
+		end
+	
+		function SetTexture(part, texid)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["TextureId"] = "rbxassetid://"..texid } } }
+			_(args)
+		end
+	
+		function SetName(part, stringg)
+			local args = {[1] = "SetName", [2] = {[1] = part}, [3] = stringg}
+			_(args)
+		end
+	
+		function MeshResize(part,size)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["Scale"] = size } } }
+			_(args)
+		end
+	
+		function SetLocked(part,boolean)
+			local args = {[1] = "SetLocked", [2] = {[1] = part}, [3] = boolean}
+			_(args)
+		end
+	
+		function SetTrans(part,int)
+			local args = {[1] = "SyncMaterial", [2] = { [1] = { ["Part"] = part, ["Transparency"] = int } } }
+			_(args)
+		end
+	
+		function Color(part,color)
+			local args = {[1] = "SyncColor", [2] = { [1] = { ["Part"] = part, ["Color"] = color, ["UnionColoring"] = false } } }
+			_(args)
+		end
+	
+		function SyncLighting(part,brightness)
+			local args = {[1] = "SyncLighting", [2] = { [1] = { ["Part"] = part, ["LightType"] = "PointLight", ["Brightness"] = brightness } } }
+			_(args)
+		end
+	
+		function Sky(id, transparency, scale, vertexColor, offset)
+			local hrp = char.HumanoidRootPart.CFrame
+			local basePos = Vector3.new(math.floor(hrp.x), math.floor(hrp.y), math.floor(hrp.z))
+	
+			local spawnPos = basePos + (offset or Vector3.new(0,0,0))
+	
+			CreatePart(CFrame.new(spawnPos) + Vector3.new(0, -10, 0), workspace)
+			wait(0.01)
+	
+			for i, v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == spawnPos.X and v.CFrame.z == spawnPos.Z then
+	
+					SetName(v, "Sky")
+					AddMesh(v)
+	
+					SetMesh(v, "111891702759441", vertexColor)
+					SetTexture(v, id)
+					MeshResize(v, Vector3.new(scale, scale, scale))
+	
+					SetLocked(v, true)
+					SetTrans(v, transparency)
+	
+					local matArgs = {
+						[1] = "SyncMaterial",
+						[2] = { [1] = { ["Part"] = v, ["Material"] = Enum.Material.Neon } }
+					}
+					_(matArgs)
+	
+					Color(v, Color3.fromRGB(255, 255, 255))
+	
+					local lightArgs = {
+						[1] = "CreateLights",
+						[2] = { [1] = { ["Part"] = v, ["LightType"] = "PointLight" } }
+					}
+					_(lightArgs)
+	
+					SyncLighting(v, 0)
+				end
+			end
+		end
+	
+		Sky("dont change this", 0, 110000, Vector3.new(0,0,0), Vector3.new(-25, -10, 0))
+	
+		wait(0.01)
+	
+		Sky(decalid, 0.02, 99999, Vector3.new(4,4,4), Vector3.new(25, -10, 0))
+	end)
+end
+coroutine.wrap(RGZGORP_fake_script)()
+local function IFLODBM_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local decalid = 104529805889965
+	
+	
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black")
+		wait(0.01)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function SetMesh(part, meshid, vertexColor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["VertexColor"] = vertexColor or Vector3.new(1, 1, 1)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function CreatePart(cf,parent)
+			local args = {[1] = "CreatePart", [2] = "Normal", [3] = cf, [4] = parent}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {[1] = "CreateMeshes", [2] = { [1] = { ["Part"] = part } } }
+			_(args)
+		end
+	
+		function SetTexture(part, texid)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["TextureId"] = "rbxassetid://"..texid } } }
+			_(args)
+		end
+	
+		function SetName(part, stringg)
+			local args = {[1] = "SetName", [2] = {[1] = part}, [3] = stringg}
+			_(args)
+		end
+	
+		function MeshResize(part,size)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["Scale"] = size } } }
+			_(args)
+		end
+	
+		function SetLocked(part,boolean)
+			local args = {[1] = "SetLocked", [2] = {[1] = part}, [3] = boolean}
+			_(args)
+		end
+	
+		function SetTrans(part,int)
+			local args = {[1] = "SyncMaterial", [2] = { [1] = { ["Part"] = part, ["Transparency"] = int } } }
+			_(args)
+		end
+	
+		function Color(part,color)
+			local args = {[1] = "SyncColor", [2] = { [1] = { ["Part"] = part, ["Color"] = color, ["UnionColoring"] = false } } }
+			_(args)
+		end
+	
+		function SyncLighting(part,brightness)
+			local args = {[1] = "SyncLighting", [2] = { [1] = { ["Part"] = part, ["LightType"] = "PointLight", ["Brightness"] = brightness } } }
+			_(args)
+		end
+	
+		function Sky(id, transparency, scale, vertexColor, offset)
+			local hrp = char.HumanoidRootPart.CFrame
+			local basePos = Vector3.new(math.floor(hrp.x), math.floor(hrp.y), math.floor(hrp.z))
+	
+			local spawnPos = basePos + (offset or Vector3.new(0,0,0))
+	
+			CreatePart(CFrame.new(spawnPos) + Vector3.new(0, -10, 0), workspace)
+			wait(0.01)
+	
+			for i, v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == spawnPos.X and v.CFrame.z == spawnPos.Z then
+	
+					SetName(v, "Sky")
+					AddMesh(v)
+	
+					SetMesh(v, "111891702759441", vertexColor)
+					SetTexture(v, id)
+					MeshResize(v, Vector3.new(scale, scale, scale))
+	
+					SetLocked(v, true)
+					SetTrans(v, transparency)
+	
+					local matArgs = {
+						[1] = "SyncMaterial",
+						[2] = { [1] = { ["Part"] = v, ["Material"] = Enum.Material.Neon } }
+					}
+					_(matArgs)
+	
+					Color(v, Color3.fromRGB(255, 255, 255))
+	
+					local lightArgs = {
+						[1] = "CreateLights",
+						[2] = { [1] = { ["Part"] = v, ["LightType"] = "PointLight" } }
+					}
+					_(lightArgs)
+	
+					SyncLighting(v, 0)
+				end
+			end
+		end
+	
+		Sky("dont change this", 0, 110000, Vector3.new(0,0,0), Vector3.new(-25, -10, 0))
+	
+		wait(0.01)
+	
+		Sky(decalid, 0.02, 99999, Vector3.new(4,4,4), Vector3.new(25, -10, 0))
+	end)
+end
+coroutine.wrap(IFLODBM_fake_script)()
+local function NOBGFU_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local id = "104529805889965"
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+		function ClonePart(table,parent)
+			local args = {
+				[1] ="Clone",
+				[2] = table,
+				[3] = parent
+			}
+	
+			_(args)
+		end
+		function removetable(t)
+			local args = { [1] = "Remove", [2] = {} }
+			for _, v in pairs(t) do
+				if v ~= nil and v:IsA("Decal") then
+					table.insert(args[2],v)
+				end
+			end
+			if #args[2] > 0 then
+				_(args)
+			end
+		end
+	
+		local testpart = remote:InvokeServer("CreatePart","Normal",CFrame.new(102938,182939,2928458), workspace.Terrain)
+		local root = testpart 
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Top)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Top)
+		end)
+		repeat task.wait()until root:FindFirstChildOfClass("Decal")
+		local decals = {}
+		for i,v in root: GetDescendants()do
+			if v:IsA"Decal"then 
+				table.insert(decals,v)
+			end
+		end
+		function exPro(root)
+			task.spawn(ClonePart,decals,root)
+		end
+	
+	
+	
+		local decalsintothevoid={}
+	
+	
+		for i,v in game.workspace:GetDescendants() do
+			if v:IsA("Decal")then
+				table.insert(decalsintothevoid,v)--if any new decals destroy them
+			end
+		end
+		function asdf()
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name ~= "Sky" then
+					task.defer(exPro,v)
+				end
+			end 
+		end
+		asdf()
+	
+	
+		if #decalsintothevoid>0 then
+			task.spawn(removetable,decalsintothevoid)
+		end
+	
+	end)
+end
+coroutine.wrap(NOBGFU_fake_script)()
+local function ATFXRC_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local id = "112792392213725"
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+		function ClonePart(table,parent)
+			local args = {
+				[1] ="Clone",
+				[2] = table,
+				[3] = parent
+			}
+	
+			_(args)
+		end
+		function removetable(t)
+			local args = { [1] = "Remove", [2] = {} }
+			for _, v in pairs(t) do
+				if v ~= nil and v:IsA("Decal") then
+					table.insert(args[2],v)
+				end
+			end
+			if #args[2] > 0 then
+				_(args)
+			end
+		end
+	
+		local testpart = remote:InvokeServer("CreatePart","Normal",CFrame.new(102938,182939,2928458), workspace.Terrain)
+		local root = testpart 
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Top)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Top)
+		end)
+		repeat task.wait()until root:FindFirstChildOfClass("Decal")
+		local decals = {}
+		for i,v in root: GetDescendants()do
+			if v:IsA"Decal"then 
+				table.insert(decals,v)
+			end
+		end
+		function exPro(root)
+			task.spawn(ClonePart,decals,root)
+		end
+	
+	
+	
+		local decalsintothevoid={}
+	
+	
+		for i,v in game.workspace:GetDescendants() do
+			if v:IsA("Decal")then
+				table.insert(decalsintothevoid,v)--if any new decals destroy them
+			end
+		end
+		function asdf()
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name ~= "Sky" then
+					task.defer(exPro,v)
+				end
+			end 
+		end
+		asdf()
+	
+	
+		if #decalsintothevoid>0 then
+			task.spawn(removetable,decalsintothevoid)
+		end
+	
+	end)
+end
+coroutine.wrap(ATFXRC_fake_script)()
+local function STYHO_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	local decalid = 137833619500777
+	
+	
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black")
+		wait(0.01)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function SetMesh(part, meshid, vertexColor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["VertexColor"] = vertexColor or Vector3.new(1, 1, 1)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function CreatePart(cf,parent)
+			local args = {[1] = "CreatePart", [2] = "Normal", [3] = cf, [4] = parent}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {[1] = "CreateMeshes", [2] = { [1] = { ["Part"] = part } } }
+			_(args)
+		end
+	
+		function SetTexture(part, texid)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["TextureId"] = "rbxassetid://"..texid } } }
+			_(args)
+		end
+	
+		function SetName(part, stringg)
+			local args = {[1] = "SetName", [2] = {[1] = part}, [3] = stringg}
+			_(args)
+		end
+	
+		function MeshResize(part,size)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["Scale"] = size } } }
+			_(args)
+		end
+	
+		function SetLocked(part,boolean)
+			local args = {[1] = "SetLocked", [2] = {[1] = part}, [3] = boolean}
+			_(args)
+		end
+	
+		function SetTrans(part,int)
+			local args = {[1] = "SyncMaterial", [2] = { [1] = { ["Part"] = part, ["Transparency"] = int } } }
+			_(args)
+		end
+	
+		function Color(part,color)
+			local args = {[1] = "SyncColor", [2] = { [1] = { ["Part"] = part, ["Color"] = color, ["UnionColoring"] = false } } }
+			_(args)
+		end
+	
+		function SyncLighting(part,brightness)
+			local args = {[1] = "SyncLighting", [2] = { [1] = { ["Part"] = part, ["LightType"] = "PointLight", ["Brightness"] = brightness } } }
+			_(args)
+		end
+	
+		function Sky(id, transparency, scale, vertexColor, offset)
+			local hrp = char.HumanoidRootPart.CFrame
+			local basePos = Vector3.new(math.floor(hrp.x), math.floor(hrp.y), math.floor(hrp.z))
+	
+			local spawnPos = basePos + (offset or Vector3.new(0,0,0))
+	
+			CreatePart(CFrame.new(spawnPos) + Vector3.new(0, -10, 0), workspace)
+			wait(0.01)
+	
+			for i, v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == spawnPos.X and v.CFrame.z == spawnPos.Z then
+	
+					SetName(v, "Sky")
+					AddMesh(v)
+	
+					SetMesh(v, "111891702759441", vertexColor)
+					SetTexture(v, id)
+					MeshResize(v, Vector3.new(scale, scale, scale))
+	
+					SetLocked(v, true)
+					SetTrans(v, transparency)
+	
+					local matArgs = {
+						[1] = "SyncMaterial",
+						[2] = { [1] = { ["Part"] = v, ["Material"] = Enum.Material.Neon } }
+					}
+					_(matArgs)
+	
+					Color(v, Color3.fromRGB(255, 255, 255))
+	
+					local lightArgs = {
+						[1] = "CreateLights",
+						[2] = { [1] = { ["Part"] = v, ["LightType"] = "PointLight" } }
+					}
+					_(lightArgs)
+	
+					SyncLighting(v, 0)
+				end
+			end
+		end
+	
+		Sky("dont change this", 0, 110000, Vector3.new(0,0,0), Vector3.new(-25, -10, 0))
+	
+		wait(0.01)
+	
+		Sky(decalid, 0.02, 99999, Vector3.new(4,4,4), Vector3.new(25, -10, 0))
+	end)
+end
+coroutine.wrap(STYHO_fake_script)()
+local function NYNSQNA_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local id = "137215184006494"
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+		function ClonePart(table,parent)
+			local args = {
+				[1] ="Clone",
+				[2] = table,
+				[3] = parent
+			}
+	
+			_(args)
+		end
+		function removetable(t)
+			local args = { [1] = "Remove", [2] = {} }
+			for _, v in pairs(t) do
+				if v ~= nil and v:IsA("Decal") then
+					table.insert(args[2],v)
+				end
+			end
+			if #args[2] > 0 then
+				_(args)
+			end
+		end
+	
+		local testpart = remote:InvokeServer("CreatePart","Normal",CFrame.new(102938,182939,2928458), workspace.Terrain)
+		local root = testpart 
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Top)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Top)
+		end)
+		repeat task.wait()until root:FindFirstChildOfClass("Decal")
+		local decals = {}
+		for i,v in root: GetDescendants()do
+			if v:IsA"Decal"then 
+				table.insert(decals,v)
+			end
+		end
+		function exPro(root)
+			task.spawn(ClonePart,decals,root)
+		end
+	
+	
+	
+		local decalsintothevoid={}
+	
+	
+		for i,v in game.workspace:GetDescendants() do
+			if v:IsA("Decal")then
+				table.insert(decalsintothevoid,v)--if any new decals destroy them
+			end
+		end
+		function asdf()
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name ~= "Sky" then
+					task.defer(exPro,v)
+				end
+			end 
+		end
+		asdf()
+	
+	
+		if #decalsintothevoid>0 then
+			task.spawn(removetable,decalsintothevoid)
+		end
+	
+	end)
+end
+coroutine.wrap(NYNSQNA_fake_script)()
+local function DAHZTW_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local id = "84442191134852"
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+		function ClonePart(table,parent)
+			local args = {
+				[1] ="Clone",
+				[2] = table,
+				[3] = parent
+			}
+	
+			_(args)
+		end
+		function removetable(t)
+			local args = { [1] = "Remove", [2] = {} }
+			for _, v in pairs(t) do
+				if v ~= nil and v:IsA("Decal") then
+					table.insert(args[2],v)
+				end
+			end
+			if #args[2] > 0 then
+				_(args)
+			end
+		end
+	
+		local testpart = remote:InvokeServer("CreatePart","Normal",CFrame.new(102938,182939,2928458), workspace.Terrain)
+		local root = testpart 
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Top)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Top)
+		end)
+		repeat task.wait()until root:FindFirstChildOfClass("Decal")
+		local decals = {}
+		for i,v in root: GetDescendants()do
+			if v:IsA"Decal"then 
+				table.insert(decals,v)
+			end
+		end
+		function exPro(root)
+			task.spawn(ClonePart,decals,root)
+		end
+	
+	
+	
+		local decalsintothevoid={}
+	
+	
+		for i,v in game.workspace:GetDescendants() do
+			if v:IsA("Decal")then
+				table.insert(decalsintothevoid,v)--if any new decals destroy them
+			end
+		end
+		function asdf()
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name ~= "Sky" then
+					task.defer(exPro,v)
+				end
+			end 
+		end
+		asdf()
+	
+	
+		if #decalsintothevoid>0 then
+			task.spawn(removetable,decalsintothevoid)
+		end
+	
+	end)
+end
+coroutine.wrap(DAHZTW_fake_script)()
+local function AGJVN_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";time 15")
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return -- Added return to prevent errors if f3x isn't found
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function delete(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function deleteall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				-- Only target objects named "Sky" or "Skybox"
+				if v.Name == "Sky" or v.Name == "Skybox" then
+					spawn(function()
+						delete(v)
+					end)
+				end
+			end
+		end
+	
+		deleteall()
+	
+	end)
+end
+coroutine.wrap(AGJVN_fake_script)()
+local function BJAODSS_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local id = "0"
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+		function ClonePart(table,parent)
+			local args = {
+				[1] ="Clone",
+				[2] = table,
+				[3] = parent
+			}
+	
+			_(args)
+		end
+		function removetable(t)
+			local args = { [1] = "Remove", [2] = {} }
+			for _, v in pairs(t) do
+				if v ~= nil and v:IsA("Decal") then
+					table.insert(args[2],v)
+				end
+			end
+			if #args[2] > 0 then
+				_(args)
+			end
+		end
+	
+		local testpart = remote:InvokeServer("CreatePart","Normal",CFrame.new(102938,182939,2928458), workspace.Terrain)
+		local root = testpart 
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Top)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Top)
+		end)
+		repeat task.wait()until root:FindFirstChildOfClass("Decal")
+		local decals = {}
+		for i,v in root: GetDescendants()do
+			if v:IsA"Decal"then 
+				table.insert(decals,v)
+			end
+		end
+		function exPro(root)
+			task.spawn(ClonePart,decals,root)
+		end
+	
+	
+	
+		local decalsintothevoid={}
+	
+	
+		for i,v in game.workspace:GetDescendants() do
+			if v:IsA("Decal")then
+				table.insert(decalsintothevoid,v)--if any new decals destroy them
+			end
+		end
+		function asdf()
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name ~= "Sky" then
+					task.defer(exPro,v)
+				end
+			end 
+		end
+		asdf()
+	
+	
+		if #decalsintothevoid>0 then
+			task.spawn(removetable,decalsintothevoid)
+		end
+	
+	end)
+end
+coroutine.wrap(BJAODSS_fake_script)()
+local function TZMJNO_fake_script() -- TextButton_13.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_13)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		-- Function to unanchor a part
+		local function unanchor(part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						Part = part,
+						Anchored = false
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function unanchorAll()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if (v:IsA("BasePart") or v:IsA("UnionOperation")) 
+					and v.Name ~= "Sky" 
+					and v.Name ~= "Skybox" then
+	
+					spawn(function()
+						unanchor(v)
+					end)
+				end
+			end
+		end
+	
+		unanchorAll()
+	
+	end)
+end
+coroutine.wrap(TZMJNO_fake_script)()
+local function RETT_fake_script() -- TextButton_14.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_14)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local backpack = player.Backpack
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+	
+			return nil
+		end
+	
+		local f3x = getf3x()
+		if not f3x then
+			warn("you dont have f3x skid")
+			return
+		end
+	
+		local syncapi = f3x.SyncAPI
+		local serverendpoint = syncapi.ServerEndpoint
+	
+		local function movePart(part, cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			serverendpoint:InvokeServer(unpack(args))
+		end
+	
+		local function rotateAll()
+			local rotation = CFrame.Angles(math.rad(45), 0, 0)
+	
+			local players = game.Players:GetPlayers()
+	
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") then
+					
+					if v.Name == "Sky" or v.Name == "Skybox" then
+						continue
+					end
+	
+					local isPlayerPart = false
+	
+					for _, p in ipairs(players) do
+						local pChar = p.Character
+						if pChar and v:IsDescendantOf(pChar) then
+							isPlayerPart = true
+							break
+						end
+					end
+	
+					if not isPlayerPart then
+						spawn(function()
+							local newCF = v.CFrame * rotation
+							movePart(v, newCF)
+						end)
+					end
+				end
+			end
+		end
+	
+		rotateAll()
+	
+	end)
+	
+end
+coroutine.wrap(RETT_fake_script)()
+local function BRCS_fake_script() -- TextButton_15.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_15)
+
+	local decalid = 96293852335430
+	
+	
+	
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black")
+		wait(0.01)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function SetMesh(part, meshid, vertexColor)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid,
+						["VertexColor"] = vertexColor or Vector3.new(1, 1, 1)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function CreatePart(cf,parent)
+			local args = {[1] = "CreatePart", [2] = "Normal", [3] = cf, [4] = parent}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {[1] = "CreateMeshes", [2] = { [1] = { ["Part"] = part } } }
+			_(args)
+		end
+	
+		function SetTexture(part, texid)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["TextureId"] = "rbxassetid://"..texid } } }
+			_(args)
+		end
+	
+		function SetName(part, stringg)
+			local args = {[1] = "SetName", [2] = {[1] = part}, [3] = stringg}
+			_(args)
+		end
+	
+		function MeshResize(part,size)
+			local args = {[1] = "SyncMesh", [2] = { [1] = { ["Part"] = part, ["Scale"] = size } } }
+			_(args)
+		end
+	
+		function SetLocked(part,boolean)
+			local args = {[1] = "SetLocked", [2] = {[1] = part}, [3] = boolean}
+			_(args)
+		end
+	
+		function SetTrans(part,int)
+			local args = {[1] = "SyncMaterial", [2] = { [1] = { ["Part"] = part, ["Transparency"] = int } } }
+			_(args)
+		end
+	
+		function Color(part,color)
+			local args = {[1] = "SyncColor", [2] = { [1] = { ["Part"] = part, ["Color"] = color, ["UnionColoring"] = false } } }
+			_(args)
+		end
+	
+		function SyncLighting(part,brightness)
+			local args = {[1] = "SyncLighting", [2] = { [1] = { ["Part"] = part, ["LightType"] = "PointLight", ["Brightness"] = brightness } } }
+			_(args)
+		end
+	
+		function Sky(id, transparency, scale, vertexColor, offset)
+			local hrp = char.HumanoidRootPart.CFrame
+			local basePos = Vector3.new(math.floor(hrp.x), math.floor(hrp.y), math.floor(hrp.z))
+	
+			local spawnPos = basePos + (offset or Vector3.new(0,0,0))
+	
+			CreatePart(CFrame.new(spawnPos) + Vector3.new(0, -10, 0), workspace)
+			wait(0.01)
+	
+			for i, v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == spawnPos.X and v.CFrame.z == spawnPos.Z then
+	
+					SetName(v, "Sky")
+					AddMesh(v)
+	
+					SetMesh(v, "111891702759441", vertexColor)
+					SetTexture(v, id)
+					MeshResize(v, Vector3.new(scale, scale, scale))
+	
+					SetLocked(v, true)
+					SetTrans(v, transparency)
+	
+					local matArgs = {
+						[1] = "SyncMaterial",
+						[2] = { [1] = { ["Part"] = v, ["Material"] = Enum.Material.Neon } }
+					}
+					_(matArgs)
+	
+					Color(v, Color3.fromRGB(255, 255, 255))
+	
+					local lightArgs = {
+						[1] = "CreateLights",
+						[2] = { [1] = { ["Part"] = v, ["LightType"] = "PointLight" } }
+					}
+					_(lightArgs)
+	
+					SyncLighting(v, 0)
+				end
+			end
+		end
+	
+		Sky("dont change this", 0, 110000, Vector3.new(0,0,0), Vector3.new(-25, -10, 0))
+	
+		wait(0.01)
+	
+		Sky(decalid, 0.02, 99999, Vector3.new(4,4,4), Vector3.new(25, -10, 0))
+	end)
+end
+coroutine.wrap(BRCS_fake_script)()
+local function GQUEYJ_fake_script() -- TextButton_16.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_16)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local id = "96293852335430"
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+		local remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+		function ClonePart(table,parent)
+			local args = {
+				[1] ="Clone",
+				[2] = table,
+				[3] = parent
+			}
+	
+			_(args)
+		end
+		function removetable(t)
+			local args = { [1] = "Remove", [2] = {} }
+			for _, v in pairs(t) do
+				if v ~= nil and v:IsA("Decal") then
+					table.insert(args[2],v)
+				end
+			end
+			if #args[2] > 0 then
+				_(args)
+			end
+		end
+	
+		local testpart = remote:InvokeServer("CreatePart","Normal",CFrame.new(102938,182939,2928458), workspace.Terrain)
+		local root = testpart 
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Front)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Back)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Right)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Left)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Bottom)
+		end)
+		task.defer(function()
+			SpawnDecal(root,Enum.NormalId.Top)
+		end)
+		task.defer(function()
+			AddDecal(root,id,Enum.NormalId.Top)
+		end)
+		repeat task.wait()until root:FindFirstChildOfClass("Decal")
+		local decals = {}
+		for i,v in root: GetDescendants()do
+			if v:IsA"Decal"then 
+				table.insert(decals,v)
+			end
+		end
+		function exPro(root)
+			task.spawn(ClonePart,decals,root)
+		end
+	
+	
+	
+		local decalsintothevoid={}
+	
+	
+		for i,v in game.workspace:GetDescendants() do
+			if v:IsA("Decal")then
+				table.insert(decalsintothevoid,v)--if any new decals destroy them
+			end
+		end
+		function asdf()
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name ~= "Sky" then
+					task.defer(exPro,v)
+				end
+			end 
+		end
+		asdf()
+	
+	
+		if #decalsintothevoid>0 then
+			task.spawn(removetable,decalsintothevoid)
+		end
+	
+	end)
+end
+coroutine.wrap(GQUEYJ_fake_script)()
+local function FFCI_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local screenGui = script.Parent
+	local textBox = screenGui:WaitForChild("skyid")
+	local skyButton = screenGui:WaitForChild("skybutton")
+	local decalButton = screenGui:WaitForChild("decalinsert")
+	
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+	local player = game.Players.LocalPlayer
+	
+	skyButton.MouseButton1Click:Connect(function()
+		local cleanId = string.gsub(textBox.Text, "%s+", "")
+		if not tonumber(cleanId) then
+			textBox.Text = "Invalid ID!"
+			return
+		end
+	
+		RequestCommand:InvokeServer(";time 0 ;fogcolor black")
+		task.wait(0.01)
+	
+		local tool
+		for i, v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then tool = v.Parent end
+		end
+		for i, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then tool = v.Parent end
+		end
+	
+		if not tool then
+			textBox.Text = "SyncAPI tool not found!"
+			return
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function _(args) remote:InvokeServer(unpack(args)) end
+	
+		local function SetMesh(part, meshid, vertexColor)
+			_( {"SyncMesh", { { ["Part"] = part, ["MeshId"] = "rbxassetid://"..meshid, ["VertexColor"] = vertexColor or Vector3.new(1, 1, 1) } } } )
+		end
+		local function CreatePart(cf, parent) _( {"CreatePart", "Normal", cf, parent} ) end
+		local function AddMesh(part) _( {"CreateMeshes", { { ["Part"] = part } } } ) end
+		local function SetTexture(part, texid) _( {"SyncMesh", { { ["Part"] = part, ["TextureId"] = "rbxassetid://"..texid } } } ) end
+		local function SetName(part, stringg) _( {"SetName", {part}, stringg} ) end
+		local function MeshResize(part, size) _( {"SyncMesh", { { ["Part"] = part, ["Scale"] = size } } } ) end
+		local function SetLocked(part, boolean) _( {"SetLocked", {part}, boolean} ) end
+		local function SetTrans(part, int) _( {"SyncMaterial", { { ["Part"] = part, ["Transparency"] = int } } } ) end
+		local function Color(part, color) _( {"SyncColor", { { ["Part"] = part, ["Color"] = color, ["UnionColoring"] = false } } } ) end
+		local function SyncLighting(part, brightness) _( {"SyncLighting", { { ["Part"] = part, ["LightType"] = "PointLight", ["Brightness"] = brightness } } } ) end
+	
+		local function Sky(id, transparency, scale, vertexColor, offset)
+			local char = player.Character
+			if not char or not char:FindFirstChild("HumanoidRootPart") then return end
+			local hrp = char.HumanoidRootPart.CFrame
+			local basePos = Vector3.new(math.floor(hrp.x), math.floor(hrp.y), math.floor(hrp.z))
+			local spawnPos = basePos + (offset or Vector3.new(0,0,0))
+	
+			CreatePart(CFrame.new(spawnPos) + Vector3.new(0, -10, 0), workspace)
+			task.wait(0.01)
+	
+			for i, v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == spawnPos.X and v.CFrame.z == spawnPos.Z then
+					SetName(v, "Sky")
+					AddMesh(v)
+					SetMesh(v, "111891702759441", vertexColor)
+					SetTexture(v, id)
+					MeshResize(v, Vector3.new(scale, scale, scale))
+					SetLocked(v, true)
+					SetTrans(v, transparency)
+					_({"SyncMaterial", { { ["Part"] = v, ["Material"] = Enum.Material.Neon } }})
+					Color(v, Color3.fromRGB(255, 255, 255))
+					_({"CreateLights", { { ["Part"] = v, ["LightType"] = "PointLight" } }})
+					SyncLighting(v, 0)
+				end
+			end
+		end
+	
+		Sky(cleanId, 0, 110000, Vector3.new(0,0,0), Vector3.new(-25, -10, 0))
+		task.wait(0.01)
+		Sky(cleanId, 0.02, 99999, Vector3.new(4,4,4), Vector3.new(25, -10, 0))
+	end)
+	
+	decalButton.MouseButton1Click:Connect(function()
+		local id = string.gsub(textBox.Text, "%s+", "")
+		if not tonumber(id) then
+			textBox.Text = "Invalid ID!"
+			return
+		end
+	
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+			end
+		end
+		if tool == nil then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+				end
+			end
+		end
+	
+		if not tool then
+			textBox.Text = "SyncAPI tool not found!"
+			return
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+		local function _(args)
+			return remote:InvokeServer(unpack(args))
+		end
+	
+		local function SpawnDecal(part, side)
+			_( {"CreateTextures", { { ["Part"] = part, ["Face"] = side, ["TextureType"] = "Decal" } } } )
+		end
+	
+		local function AddDecal(part, asset, side)
+			_( {"SyncTexture", { { ["Part"] = part, ["Face"] = side, ["TextureType"] = "Decal", ["Texture"] = "rbxassetid://" .. asset } } } )
+		end
+	
+		local function ClonePart(tbl, parent)
+			_( {"Clone", tbl, parent} )
+		end
+	
+		local function removetable(t)
+			local args = { "Remove", {} }
+			for _, v in pairs(t) do
+				if v ~= nil and v:IsA("Decal") then
+					table.insert(args, v)
+				end
+			end
+			if #args > 0 then
+				_(args)
+			end
+		end
+	
+		local testpart = remote:InvokeServer("CreatePart", "Normal", CFrame.new(102938, 182939, 2928458), workspace.Terrain)
+		local root = testpart 
+	
+		task.defer(function() SpawnDecal(root, Enum.NormalId.Front) end)
+		task.defer(function() AddDecal(root, id, Enum.NormalId.Front) end)
+		task.defer(function() SpawnDecal(root, Enum.NormalId.Back) end)
+		task.defer(function() AddDecal(root, id, Enum.NormalId.Back) end)
+		task.defer(function() SpawnDecal(root, Enum.NormalId.Right) end)
+		task.defer(function() AddDecal(root, id, Enum.NormalId.Right) end)
+		task.defer(function() SpawnDecal(root, Enum.NormalId.Left) end)
+		task.defer(function() AddDecal(root, id, Enum.NormalId.Left) end)
+		task.defer(function() SpawnDecal(root, Enum.NormalId.Bottom) end)
+		task.defer(function() AddDecal(root, id, Enum.NormalId.Bottom) end)
+		task.defer(function() SpawnDecal(root, Enum.NormalId.Top) end)
+		task.defer(function() AddDecal(root, id, Enum.NormalId.Top) end)
+	
+		repeat task.wait() until root:FindFirstChildOfClass("Decal")
+	
+		local decals = {}
+		for i, v in root:GetDescendants() do
+			if v:IsA("Decal") then 
+				table.insert(decals, v)
+			end
+		end
+	
+		local function exPro(targetPart)
+			task.spawn(ClonePart, decals, targetPart)
+		end
+	
+		local decalsintothevoid = {}
+		for i, v in game.workspace:GetDescendants() do
+			if v:IsA("Decal") then
+				table.insert(decalsintothevoid, v)
+			end
+		end
+	
+		local function asdf()
+			for i, v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name ~= "Sky" then
+					task.defer(exPro, v)
+				end
+			end 
+		end
+		asdf()
+	
+		if #decalsintothevoid > 0 then
+			task.spawn(removetable, decalsintothevoid)
+		end
+	end)
+	
+end
+coroutine.wrap(FFCI_fake_script)()
+local function DJPRIUG_fake_script() -- TextButton_17.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_17)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";god me")
+	
+	end)
+end
+coroutine.wrap(DJPRIUG_fake_script)()
+local function JDZHJIL_fake_script() -- TextButton_18.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_18)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";tp all me")
+	
+	end)
+end
+coroutine.wrap(JDZHJIL_fake_script)()
+local function BJBVEZ_fake_script() -- TextButton_19.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_19)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";speed me 70")
+	
+	end)
+end
+coroutine.wrap(BJBVEZ_fake_script)()
+local function LXMIBJO_fake_script() -- TextButton_20.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_20)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";rank friends mod")
+	
+	end)
+end
+coroutine.wrap(LXMIBJO_fake_script)()
+local function ZVUUCH_fake_script() -- TextButton_21.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_21)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";sc Your friend Builderman has joined this experience.")
+	
+	end)
+end
+coroutine.wrap(ZVUUCH_fake_script)()
+local function HHCVNH_fake_script() -- TextButton_22.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_22)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";btools all")
+	
+	end)
+end
+coroutine.wrap(HHCVNH_fake_script)()
+local function MCGE_fake_script() -- TextButton_23.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_23)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 90256750115455 ;volume inf ;pitch 1.07")
+	
+	end)
+end
+coroutine.wrap(MCGE_fake_script)()
+local function IIEDKH_fake_script() -- TextButton_24.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_24)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 102511771666136 ;volume inf")
+	
+	end)
+end
+coroutine.wrap(IIEDKH_fake_script)()
+local function EQHTFOY_fake_script() -- TextButton_25.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_25)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 90054735589094 ;volume inf")
+	
+	end)
+end
+coroutine.wrap(EQHTFOY_fake_script)()
+local function TPYLA_fake_script() -- TextButton_26.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_26)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 110788401793874 ;volume inf")
+	
+	end)
+end
+coroutine.wrap(TPYLA_fake_script)()
+local function UEUMBTX_fake_script() -- TextButton_27.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_27)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 72605246580509 ;volume inf ;pitch 0.25")
+	
+	end)
+end
+coroutine.wrap(UEUMBTX_fake_script)()
+local function UJGQ_fake_script() -- TextButton_28.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_28)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 132681722714813 ;volume inf ;pitch 0.74")
+	
+	end)
+end
+coroutine.wrap(UJGQ_fake_script)()
+local function AMGORXL_fake_script() -- TextButton_29.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_29)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 93827847744874 ;volume inf ;pitch 1.63")
+	
+	end)
+end
+coroutine.wrap(AMGORXL_fake_script)()
+local function JNBUV_fake_script() -- TextButton_30.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_30)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 138194554038974 ;volume inf ;pitch 0.19")
+	
+	end)
+end
+coroutine.wrap(JNBUV_fake_script)()
+local function DLAATN_fake_script() -- TextButton_31.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_31)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 103745553133683 ;volume inf ;pitch 0.083")
+	
+	end)
+end
+coroutine.wrap(DLAATN_fake_script)()
+local function JWNMFMF_fake_script() -- TextButton_32.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_32)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 6647947988 ;volume inf")
+	
+	end)
+end
+coroutine.wrap(JWNMFMF_fake_script)()
+local function MCRW_fake_script() -- TextButton_33.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_33)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 116424639666494 ;volume inf ;pitch 0.163")
+	
+	end)
+end
+coroutine.wrap(MCRW_fake_script)()
+local function HMUUNCZ_fake_script() -- TextButton_34.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_34)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 89128162991846 ;volume inf ;pitch 0.123")
+	
+	end)
+end
+coroutine.wrap(HMUUNCZ_fake_script)()
+local function KKXFPSZ_fake_script() -- TextButton_35.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_35)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 5356466111 ;volume inf ;pitch 0.9")
+	
+	end)
+end
+coroutine.wrap(KKXFPSZ_fake_script)()
+local function URTPYZ_fake_script() -- TextButton_36.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_36)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 1837807891 ;volume inf")
+	
+	end)
+end
+coroutine.wrap(URTPYZ_fake_script)()
+local function XDMG_fake_script() -- TextButton_37.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_37)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 81647976383996 ;volume inf ;pitch 0.072")
+	
+	end)
+end
+coroutine.wrap(XDMG_fake_script)()
+local function OIWFN_fake_script() -- TextButton_38.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_38)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 139667589900228 ;volume inf ;pitch 0.062")
+	
+	end)
+end
+coroutine.wrap(OIWFN_fake_script)()
+local function XEKCSDE_fake_script() -- TextButton_39.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_39)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 79998032087165 ;volume inf ;pitch 0.93")
+	
+	end)
+end
+coroutine.wrap(XEKCSDE_fake_script)()
+local function YDOLJN_fake_script() -- TextButton_40.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_40)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 112650925623993 ;volume inf ;pitch 0.087")
+	
+	end)
+end
+coroutine.wrap(YDOLJN_fake_script)()
+local function ZJZPJ_fake_script() -- TextButton_41.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_41)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 132046898251409 ;volume inf ;pitch 0.3")
+	
+	end)
+end
+coroutine.wrap(ZJZPJ_fake_script)()
+local function OTAWNZL_fake_script() -- TextButton_42.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_42)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 111354391779058 ;volume inf ;pitch 0.3")
+	
+	end)
+end
+coroutine.wrap(OTAWNZL_fake_script)()
+local function YVBJEFF_fake_script() -- TextButton_43.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_43)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 126566125309372 ;volume inf ;pitch 0.065")
+	
+	end)
+end
+coroutine.wrap(YVBJEFF_fake_script)()
+local function WEDCRN_fake_script() -- TextButton_44.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_44)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 1846368080 ;volume inf ;pitch 0.95")
+	
+	end)
+end
+coroutine.wrap(WEDCRN_fake_script)()
+local function HQSTOL_fake_script() -- TextButton_45.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_45)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 124286250726846 ;volume inf ;pitch 1.27")
+	
+	end)
+end
+coroutine.wrap(HQSTOL_fake_script)()
+local function TZOR_fake_script() -- TextButton_46.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_46)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 77990700461959 ;volume inf ;pitch 0.09")
+	
+	end)
+end
+coroutine.wrap(TZOR_fake_script)()
+local function VQJTV_fake_script() -- TextButton_47.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_47)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";tp all me")
+	
+	end)
+end
+coroutine.wrap(VQJTV_fake_script)()
+local function LTZHR_fake_script() -- TextButton_48.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_48)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";time 15")
+	
+	end)
+end
+coroutine.wrap(LTZHR_fake_script)()
+local function GCQB_fake_script() -- TextButton_49.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_49)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";time 0")
+	
+	end)
+end
+coroutine.wrap(GCQB_fake_script)()
+local function GITT_fake_script() -- TextButton_50.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_50)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 70635213877495 ;volume inf ;pitch 0.165")
+	
+	end)
+end
+coroutine.wrap(GITT_fake_script)()
+local function NFGAWXM_fake_script() -- TextButton_51.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_51)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 78833960356424 ;volume inf ;pitch 0.16")
+	
+	end)
+end
+coroutine.wrap(NFGAWXM_fake_script)()
+local function NBUMEY_fake_script() -- TextButton_52.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_52)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 136300748366142 ;volume inf ;pitch 0.11")
+	
+	end)
+end
+coroutine.wrap(NBUMEY_fake_script)()
+local function JYMXMP_fake_script() -- TextButton_53.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_53)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 83519018283981 ;volume inf ;pitch 0.1")
+	
+	end)
+end
+coroutine.wrap(JYMXMP_fake_script)()
+local function QFAAXGF_fake_script() -- TextButton_54.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_54)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 123108027372852 ;volume inf ;pitch 0.85")
+	
+	end)
+end
+coroutine.wrap(QFAAXGF_fake_script)()
+local function QTUSD_fake_script() -- TextButton_55.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_55)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 105493442383109 ;volume inf ;pitch 0.2")
+	
+	end)
+end
+coroutine.wrap(QTUSD_fake_script)()
+local function EBXZ_fake_script() -- TextButton_56.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_56)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";sm This game has been hacked by TrafficConeHax")
+	
+	end)
+end
+coroutine.wrap(EBXZ_fake_script)()
+local function ERYI_fake_script() -- TextButton_57.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_57)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";shutdown")
+	
+	end)
+end
+coroutine.wrap(ERYI_fake_script)()
+local function CPNQVOR_fake_script() -- TextButton_58.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_58)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";kick nonfriends Game got hacked by TrafficConeHax")
+	
+	end)
+end
+coroutine.wrap(CPNQVOR_fake_script)()
+local function FPOK_fake_script() -- TextButton_59.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_59)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";respawn")
+	
+	end)
+end
+coroutine.wrap(FPOK_fake_script)()
+local function XOYDEMC_fake_script() -- TextButton_60.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_60)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 9046435309 ;volume inf ;pitch 0.83")
+	
+	end)
+end
+coroutine.wrap(XOYDEMC_fake_script)()
+local function QBCX_fake_script() -- TextButton_61.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_61)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 117389479800076 ;volume inf ;pitch 0.125")
+	
+	end)
+end
+coroutine.wrap(QBCX_fake_script)()
+local function EXAI_fake_script() -- TextButton_62.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_62)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 123572020022002 ;volume inf")
+	
+	end)
+end
+coroutine.wrap(EXAI_fake_script)()
+local function HRAZFDH_fake_script() -- TextButton_63.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_63)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 120513372601966 ;volume inf ;pitch 0.07")
+	
+	end)
+end
+coroutine.wrap(HRAZFDH_fake_script)()
+local function OPIBF_fake_script() -- TextButton_64.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_64)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 137669410920869 ;volume inf")
+	
+	end)
+end
+coroutine.wrap(OPIBF_fake_script)()
+local function JSZNSKI_fake_script() -- TextButton_65.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_65)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 133244134938814 ;volume inf")
+	
+	end)
+end
+coroutine.wrap(JSZNSKI_fake_script)()
+local function NBXK_fake_script() -- Page3.MapLoaderShit 
+	local script = Instance.new('LocalScript', Page3)
+
+	local idMap = {
+		["brookhaven"]    = 97576904853954, 
+		["scp087"]        = 74246564873554,
+		["randomcity"]    = 2701703521,
+		["ragdollengine"] = 9263583853,
+		["randomobby"]   = 136671886829890,
+		["horror"]        = 9818642099,
+		["mw2rust"]      = 126330309188983,
+		["oldobby"]      = 133173439446281,
+		["slap"]      = 127895626152717,
+		["nuketown"]      = 138185161558931,
+		["mc"]           = 111318713256221
+	}
+	
+	local function poopnoremove(id)
+		-- fixed by 1sw0rd1
+		-- edit by trafficconehax
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+	
+		-- Find the SyncAPI tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+				break
+			end
+		end
+		if not tool then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		if not tool then
+			warn("SyncAPI tool not found!")
+			return
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		-- Load the model
+		local model_id = id
+		local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+		imported_model.Parent = game.Lighting
+	
+		-- Determine destination
+		local destination = workspace:FindFirstChildOfClass("Terrain")
+		if tool:FindFirstChild("Tools") and tool:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+			destination = workspace
+		end
+	
+		-- Anchor all parts
+		for _, v in next, imported_model:GetDescendants() do
+			pcall(function()
+				v.Anchored = true
+			end)
+		end
+	
+		-- Prepare for parts creation
+		local totalparts = {}
+		local total = 0
+		local completed = 0
+	
+		for i,v in pairs(imported_model:GetDescendants()) do
+			if v:IsA("Part") or v:IsA("WedgePart") or v:IsA("Seat") or v:IsA("VehicleSeat") or v:IsA("TrussPart") or v:IsA("SpawnLocation") or v:IsA("CornerWedgePart") then
+				total += 1
+				local Type =
+					v:IsA("WedgePart") and "Wedge" or
+					v:IsA("Seat") and "Seat" or
+					v:IsA("VehicleSeat") and "Vehicle Seat" or
+					v:IsA("TrussPart") and "Truss" or
+					v:IsA("SpawnLocation") and "Spawn" or
+					v:IsA("CornerWedgePart") and "Corner" or
+					v.Shape == Enum.PartType.Block and "Normal" or
+					v.Shape == Enum.PartType.Ball and "Ball" or
+					v.Shape == Enum.PartType.Cylinder and "Cylinder"
+	
+				task.defer(function()
+					local part = remote:InvokeServer("CreatePart", Type, v.CFrame, destination)
+					table.insert(totalparts, {new=part,old=v})
+					completed += 1
+				end)
+			end
+		end
+	
+		while completed < total do
+			task.wait()
+		end
+	
+		-- Sync resize
+		local cframes = {}
+		for i,data in pairs(totalparts) do
+			table.insert(cframes, {Part=data.new, CFrame=data.old.CFrame, Size=data.old.Size})
+		end
+		task.defer(function()
+			remote:InvokeServer("SyncResize", cframes)
+		end)
+	
+		-- Sync collision
+		local collisionData = {}
+		for i,data in pairs(totalparts) do
+			if data.old.CanCollide ~= true then
+				table.insert(collisionData, {Part=data.new, CanCollide=data.old.CanCollide})
+			end
+		end
+		if #collisionData > 0 then
+			task.defer(function()
+				remote:InvokeServer("SyncCollision", collisionData)
+			end)
+		end
+	
+		-- Sync color
+		local colorData = {}
+		for i,data in pairs(totalparts) do
+			table.insert(colorData, {Part=data.new, Color=data.old.Color})
+		end
+		task.defer(function()
+			remote:InvokeServer("SyncColor", colorData)
+		end)
+	
+		-- Sync material
+		local materialData = {}
+		for i,data in pairs(totalparts) do
+			if data.old.Material ~= Enum.Material.Plastic or data.old.Transparency ~= 0 or data.old.Reflectance ~= 0 then
+				table.insert(materialData, {Part=data.new, Material=data.old.Material, Transparency=data.old.Transparency, Reflectance=data.old.Reflectance})
+			end
+		end
+		if #materialData > 0 then
+			task.defer(function()
+				remote:InvokeServer("SyncMaterial", materialData)
+			end)
+		end
+	
+		-- Sync surface properties
+		local surfaceData = {}
+		for i,data in pairs(totalparts) do
+			table.insert(surfaceData, {
+				Part = data.new,
+				Surfaces = {
+					Top = data.old.TopSurface,
+					Front = data.old.FrontSurface,
+					Bottom = data.old.BottomSurface,
+					Right = data.old.RightSurface,
+					Left = data.old.LeftSurface,
+					Back = data.old.BackSurface
+				}
+			})
+		end
+		task.defer(function()
+			remote:InvokeServer("SyncSurface", surfaceData)
+		end)
+	
+		-- Create meshes
+		local meshData = {}
+		for i,data in pairs(totalparts) do
+			local mesh1 = data.old:FindFirstChildOfClass("SpecialMesh")
+			if mesh1 then
+				table.insert(meshData, {Part=data.new, MeshId=mesh1.MeshId, TextureId=mesh1.TextureId, Scale=mesh1.Scale, MeshType=mesh1.MeshType, VertexColor=mesh1.VertexColor})
+			end
+		end
+		if #meshData > 0 then
+			task.defer(function()
+				remote:InvokeServer("SyncMesh", meshData)
+			end)
+		end
+	
+		-- Create cylinder meshes
+		local cylMeshData = {}
+		for i,data in pairs(totalparts) do
+			local mesh2 = data.old:FindFirstChildOfClass("CylinderMesh")
+			if mesh2 then
+				table.insert(cylMeshData, {Part=data.new})
+			end
+		end
+		if #cylMeshData > 0 then
+			task.defer(function()
+				remote:InvokeServer("CreateMeshes", cylMeshData)
+			end)
+		end
+	
+		-- Create lights
+		local lightTypes = {
+			{Class="SpotLight",Type="SpotLight"},
+			{Class="PointLight",Type="PointLight"},
+			{Class="SurfaceLight",Type="SurfaceLight"}
+		}
+	
+		for _, lightInfo in ipairs(lightTypes) do
+			local lightsData = {}
+			for i,data in pairs(totalparts) do
+				local lightObj = data.old:FindFirstChildOfClass(lightInfo.Class)
+				if lightObj then
+					local entry = {Part=data.new, LightType=lightInfo.Type}
+					-- Add properties if applicable
+					if lightInfo.Type ~= "SurfaceLight" then
+						entry.Color = lightObj.Color
+						entry.Range = lightObj.Range
+						entry.Shadows = lightObj.Shadows
+					else
+						entry.Color = lightObj.Color
+						entry.Range = lightObj.Range
+						entry.Face = lightObj.Face
+						entry.Angle = lightObj.Angle
+						entry.Shadows = lightObj.Shadows
+					end
+					table.insert(lightsData, entry)
+				end
+			end
+			if #lightsData > 0 then
+				task.defer(function()
+					remote:InvokeServer("CreateLights", lightsData)
+				end)
+			end
+		end
+	
+		-- Handle textures and decals
+		local textureDecalData = {}
+		for i,data in pairs(totalparts) do
+			local texture = data.old:FindFirstChildOfClass("Texture")
+			local decal = data.old:FindFirstChildOfClass("Decal")
+	
+			if texture then
+				for _, v in pairs(data.old:GetChildren()) do
+					if v.ClassName == "Texture" then
+						table.insert(textureDecalData, {Part=data.new, Face=v.Face, TextureType="Texture"})
+						remote:InvokeServer("CreateTextures", {{Part=data.new, Face=v.Face, TextureType="Texture"}})
+						remote:InvokeServer("SyncTexture", {{Part=data.new, Face=v.Face, TextureType="Texture", StudsPerTileU=v.StudsPerTileU, StudsPerTileV=v.StudsPerTileV, Texture=v.Texture, Transparency=v.Transparency}})
+					end
+				end
+			end
+			if decal then
+				for _, v in pairs(data.old:GetChildren()) do
+					if v.ClassName == "Decal" then
+						table.insert(textureDecalData, {Part=data.new, Face=v.Face, TextureType="Decal"})
+						remote:InvokeServer("CreateTextures", {{Part=data.new, Face=v.Face, TextureType="Decal"}})
+						remote:InvokeServer("SyncTexture", {{Part=data.new, Face=v.Face, TextureType="Decal", Texture=v.Texture, Transparency=v.Transparency}})
+					end
+				end
+			end
+		end
+	
+		-- Decorations: Fire, Sparkles, Smoke
+		for i,data in pairs(totalparts) do
+			task.defer(function()
+				local oldPart = data.old
+				local newPart = data.new
+				local fire = oldPart:FindFirstChildOfClass("Fire")
+				local sparkles = oldPart:FindFirstChildOfClass("Sparkles")
+				local smoke = oldPart:FindFirstChildOfClass("Smoke")
+	
+				if fire and fire.Enabled then
+					remote:InvokeServer("CreateDecorations", {{Part=newPart, DecorationType="Fire"}})
+					remote:InvokeServer("SyncDecorate", {{Part=newPart, DecorationType="Fire", Color=fire.Color, SecondaryColor=fire.SecondaryColor, Size=fire.Size, Heat=fire.Heat}})
+				end
+				if sparkles and sparkles.Enabled then
+					remote:InvokeServer("CreateDecorations", {{Part=newPart, DecorationType="Sparkles"}})
+					remote:InvokeServer("SyncDecorate", {{Part=newPart, DecorationType="Sparkles", SparkleColor=sparkles.SparkleColor}})
+				end
+				if smoke and smoke.Enabled then
+					remote:InvokeServer("CreateDecorations", {{Part=newPart, DecorationType="Smoke"}})
+					remote:InvokeServer("SyncDecorate", {{Part=newPart, DecorationType="Smoke", Color=smoke.Color, Size=smoke.Size, RiseVelocity=smoke.RiseVelocity, Opacity=smoke.Opacity}})
+				end
+			end)
+		end
+	
+		print("Finished build.")
+		imported_model:Destroy()
+	end
+	
+	local function poop(id)
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient", 5).Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";re")
+		task.wait(0.1)
+		RequestCommand:InvokeServer(";btools ;give me build")
+		task.wait(1.5)
+	
+		local player = game.Players.LocalPlayer
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				tool = v.Parent
+				break
+			end
+		end
+		if not tool then
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" then
+					tool = v.Parent
+					break
+				end
+			end
+		end
+	
+		if not tool then
+			warn("SyncAPI tool not found!")
+			return
+		end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		-- Remove existing character parts
+		remote:InvokeServer('Remove', {game.Players.LocalPlayer.Character})
+	
+		-- Remove selected parts from workspace
+		local function GetPartsFromSelection(Selection)
+			local Parts = {}
+			for _, Descendant in pairs(Selection:GetDescendants()) do
+				if Descendant:IsA('BasePart') and Descendant.Name ~= "Terrain" and not game.Players:GetPlayerFromCharacter(Descendant.Parent) and not Descendant.Parent:IsA("Accessory") then
+					table.insert(Parts, Descendant)
+				end
+			end
+			return Parts
+		end
+	
+		local selectedParts = GetPartsFromSelection(workspace)
+		local partsToRemove = {}
+		for _, Part in pairs(selectedParts) do
+			table.insert(partsToRemove, Part)
+		end
+		remote:InvokeServer('Remove', partsToRemove)
+	
+		wait(0.5)
+	
+		-- Call main function
+		poopnoremove(id)
+	end
+	
+	local page = script.Parent
+	
+	for _, button in ipairs(page:GetChildren()) do
+		if button:IsA("TextButton") or button:IsA("ImageButton") then
+			button.MouseButton1Click:Connect(function()
+				local assetId = idMap[button.Name]
+				if assetId then
+					print("Spawning: " .. button.Name)
+					poop(assetId)
+				else
+					warn("No ID set for " .. button.Name)
+				end
+			end)
+		end
+	end
+end
+coroutine.wrap(NBXK_fake_script)()
+local function MILMNKA_fake_script() -- TextButton_66.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_66)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";globalforceplace 137360188481491")
+	
+	end)
+end
+coroutine.wrap(MILMNKA_fake_script)()
+local function AWIQCF_fake_script() -- TextButton_67.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_67)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";forceplace all 137360188481491")
+	
+	end)
+end
+coroutine.wrap(AWIQCF_fake_script)()
+local function LTONL_fake_script() -- TextButton_68.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_68)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";place all 137360188481491")
+	
+	end)
+end
+coroutine.wrap(LTONL_fake_script)()
+local function BMHTP_fake_script() -- TrafficConeHaxRealm.LocalScript 
+	local script = Instance.new('LocalScript', TrafficConeHaxRealm)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local function poopnoremove(id)
+			-- fixed by 1sw0rd1
+			-- edit by trafficconehax
+	
+			local player = game.Players.LocalPlayer
+			local char = player.Character
+			local tool
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+					tool = v.Parent
+				end
+			end
+			if tool == nil then
+				for i,v in player:GetDescendants() do
+					if v.Name == "SyncAPI" then
+						tool = v.Parent
+					end
+				end
+			end
+			remote = tool.SyncAPI.ServerEndpoint
+	
+			local model_id = id
+			local imported_model = game:GetObjects("rbxassetid://" .. model_id)[1]
+			imported_model.Parent = game.Lighting
+	
+			local destination = workspace:FindFirstChildOfClass("Terrain")
+	
+			if tool ~= nil and tool:FindFirstChild("Tools") and tool:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+				destination = workspace
+			end
+	
+			for _, v in next, imported_model:GetDescendants() do
+				pcall(function()
+					v.Anchored = true
+				end)
+			end
+	
+			local plr = game:GetService("Players").LocalPlayer
+	
+			local totalparts = {}
+	
+			total = 0
+			completed = 0
+	
+			for i,v in pairs(imported_model:GetDescendants()) do
+				if v:IsA("Part") or v:IsA("WedgePart") or v:IsA("Seat") or v:IsA("VehicleSeat") or v:IsA("TrussPart") or v:IsA("SpawnLocation") or v:IsA("CornerWedgePart") then
+					total += 1
+					local Type = v:IsA("WedgePart") and "Wedge" or v:IsA("Seat") and "Seat" or v:IsA("VehicleSeat") and "Vehicle Seat" or v:IsA("TrussPart") and "Truss" or v:IsA("SpawnLocation") and "Spawn" or v:IsA("CornerWedgePart") and "Corner" or
+						v.Shape == Enum.PartType.Block and "Normal" or
+						v.Shape == Enum.PartType.Ball and "Ball" or
+						v.Shape == Enum.PartType.Cylinder and "Cylinder"
+	
+					task.defer(function()
+						local part = remote:InvokeServer("CreatePart",Type,v.CFrame,destination)
+						table.insert(totalparts, {new=part,old=v})
+						completed += 1
+					end)
+				end
+			end
+	
+			while completed < total do
+				task.wait()
+			end
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				table.insert(yeah,{Part=data.new,CFrame=data.old.CFrame,Size=data.old.Size})
+			end
+			task.defer(function()
+				remote:InvokeServer("SyncResize",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				if data.old.CanCollide ~= true then
+					table.insert(yeah,{Part=data.new,CanCollide=data.old.CanCollide})
+				end
+			end
+			if #yeah > 0 then
+				task.defer(function()
+					remote:InvokeServer("SyncCollision",yeah)
+				end)
+			end
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				table.insert(yeah,{Part=data.new,Color=data.old.Color})
+			end
+			task.defer(function()
+				remote:InvokeServer("SyncColor",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				if data.old.Material ~= "Plastic" or data.old.Reflectance ~= 0 or data.old.Transparency ~= 0 then
+					table.insert(yeah,{Part=data.new,Material=data.old.Material,Transparency=data.old.Transparency,Reflectance=data.old.Reflectance})
+				end
+			end
+			if #yeah > 0 then
+				task.defer(function()
+					remote:InvokeServer("SyncMaterial",yeah)
+				end)
+			end
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				table.insert(yeah,{Part=data.new,Surfaces={Top=data.old.TopSurface,Front=data.old.FrontSurface,Bottom=data.old.BottomSurface,Right=data.old.RightSurface,Left=data.old.LeftSurface,Back=data.old.BackSurface}})
+			end
+			task.defer(function()
+				remote:InvokeServer("SyncSurface",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local mesh1 = data.old:FindFirstChildOfClass("SpecialMesh")
+				if mesh1 then
+					table.insert(yeah,{Part=data.new})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("CreateMeshes",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local mesh1 = data.old:FindFirstChildOfClass("SpecialMesh")
+				if mesh1 then
+					table.insert(yeah,{Part=data.new,MeshId=mesh1.MeshId,TextureId=mesh1.TextureId,Scale=mesh1.Scale,MeshType=mesh1.MeshType,VertexColor=mesh1.VertexColor})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("SyncMesh",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local mesh2 = data.old:FindFirstChildOfClass("CylinderMesh")
+				if mesh2 then
+					table.insert(yeah,{Part=data.new})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("CreateMeshes",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local light1 = data.old:FindFirstChildOfClass("SpotLight")
+				if light1 then
+					table.insert(yeah,{Part=data.new,LightType="SpotLight"})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("CreateLights",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local light1 = data.old:FindFirstChildOfClass("SpotLight")
+				if light1 then
+					table.insert(yeah,{Part=data.new,LightType="SpotLight",Color=light1.Color,Range=light1.Range,Face=light1.Face,Angle=light1.Angle,Shadows=light1.Shadows})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("SyncLighting",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local light2 = data.old:FindFirstChildOfClass("PointLight")
+				if light2 then
+					table.insert(yeah,{Part=data.new,LightType="PointLight"})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("CreateLights",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local light2 = data.old:FindFirstChildOfClass("PointLight")
+				if light2 then
+					table.insert(yeah,{Part=data.new,LightType="PointLight",Color=light2.Color,Range=light2.Range,Shadows=light2.Shadows})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("SyncLighting",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local light3 = data.old:FindFirstChildOfClass("SurfaceLight")
+				if light3 then
+					table.insert(yeah,{Part=data.new,LightType="SurfaceLight"})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("CreateLights",yeah)
+			end)
+	
+			local yeah = {}
+			for i,data in pairs(totalparts) do
+				local light3 = data.old:FindFirstChildOfClass("SurfaceLight")
+				if light3 then
+					table.insert(yeah,{Part=data.new,LightType="SurfaceLight",Color=light3.Color,Range=light3.Range,Face=light3.Face,Angle=light3.Angle,Shadows=light3.Shadows})
+				end
+			end
+			task.defer(function()
+				remote:InvokeServer("SyncLighting",yeah)
+			end)
+	
+			local yeah = {}
+	
+			for i,data in pairs(totalparts) do
+				task.defer(function()
+					local texture = data.old:FindFirstChildOfClass("Texture")
+					local decal = data.old:FindFirstChildOfClass("Decal")
+					if texture then
+						for i,v in pairs(data.old:GetChildren()) do
+							if v.ClassName == "Texture" then
+								remote:InvokeServer("CreateTextures", {{ Part = data.new, Face = v.Face, TextureType = "Texture" }})
+								remote:InvokeServer("SyncTexture", {{ Part = data.new, Face = v.Face, TextureType = "Texture", StudsPerTileU = v.StudsPerTileU, StudsPerTileV = v.StudsPerTileV, Texture = v.Texture, Transparency = v.Transparency }})
+							end
+						end
+					end
+					if decal then
+						for i,v in pairs(data.old:GetChildren()) do
+							if v.ClassName == "Decal" then
+								remote:InvokeServer("CreateTextures", {{ Part = data.new, Face = v.Face, TextureType = "Decal" }})
+								remote:InvokeServer("SyncTexture", {{ Part = data.new, Face = v.Face, TextureType = "Decal", Texture = v.Texture, Transparency = v.Transparency }})
+							end
+						end
+					end
+	
+					local fire = data.old:FindFirstChildOfClass("Fire")
+					local sparkles = data.old:FindFirstChildOfClass("Sparkles")
+					local smoke = data.old:FindFirstChildOfClass("Smoke")
+					if fire and fire.Enabled == true then
+						remote:InvokeServer("CreateDecorations", {{ Part = data.new, DecorationType = "Fire" }})
+						remote:InvokeServer("SyncDecorate", {{ Part = data.new, DecorationType = "Fire", Color = fire.Color, SecondaryColor = fire.SecondaryColor, Size = fire.Size, Heat = fire.Heat }})
+					end
+					if sparkles and sparkles.Enabled == true then
+						remote:InvokeServer("CreateDecorations",{{Part=created,DecorationType="Sparkles"}})
+						remote:InvokeServer("SyncDecorate",{{Part=created,DecorationType="Sparkles",SparkleColor=sparkles.SparkleColor}})
+					end
+					if smoke and smoke.Enabled == true then
+						remote:InvokeServer("CreateDecorations", {{ Part = data.new, DecorationType = "Smoke" }})
+						remote:InvokeServer("SyncDecorate", {{ Part = data.new, DecorationType = "Smoke", Color = smoke.Color, Size = smoke.Size, RiseVelocity = smoke.RiseVelocity, Opacity = smoke.Opacity }})
+	
+					end
+				end)
+			end
+	
+			print("Finished build.")
+			imported_model.Parent = nil
+		end
+	
+		local function poop(id)
+			local ReplicatedStorage = game:GetService("ReplicatedStorage")
+			local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+			RequestCommand:InvokeServer(";re")
+			wait(0.1)
+			RequestCommand:InvokeServer(";btools ;give me build")
+			wait(1.5)
+	
+			local player = game.Players.LocalPlayer
+			local char = player.Character
+			local tool
+			for i,v in player:GetDescendants() do
+				if v.Name == "SyncAPI" and v.Parent:FindFirstChild("Tools") and not v.Parent:FindFirstChild("Tools"):FindFirstChild("Marketplace") then
+					tool = v.Parent
+				end
+			end
+			if tool == nil then
+				for i,v in player:GetDescendants() do
+					if v.Name == "SyncAPI" then
+						tool = v.Parent
+					end
+				end
+			end
+			remote = tool.SyncAPI.ServerEndpoint
+	
+			remote:InvokeServer('Remove', {game.Players.LocalPlayer.Character});
+	
+			local function GetPartsFromSelection(Selection)
+				local Parts = {}
+				for _, Descendant in pairs(Selection:GetDescendants()) do
+					if Descendant:IsA 'BasePart' and Descendant.Name ~= "Terrain" and not game.Players:GetPlayerFromCharacter(Descendant.Parent) and not Descendant.Parent:IsA("Accessory") then
+						Parts[#Parts + 1] = Descendant
+					end
+				end
+				return Parts
+			end
+	
+			local getfuckedlol = GetPartsFromSelection(workspace)
+			local shitass = {}
+			for _, Part in pairs(getfuckedlol) do
+				table.insert(shitass, Part);
+			end;
+			remote:InvokeServer('Remove', shitass);
+	
+			wait(0.5)
+	
+			poopnoremove(id)
+		end
+		poop(79609403203492)
+	end)
+end
+coroutine.wrap(BMHTP_fake_script)()
+local function XKWJI_fake_script() -- TextButton_69.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_69)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";fogcolor black ;fog 100")
+	
+	end)
+end
+coroutine.wrap(XKWJI_fake_script)()
+local function EPEI_fake_script() -- TextButton_70.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_70)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";unfog")
+	
+	end)
+end
+coroutine.wrap(EPEI_fake_script)()
